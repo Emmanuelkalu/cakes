@@ -173,9 +173,7 @@
           <li class="current-menu-item menu-item-has-children"><a href="#">Homepage</a><span class="sub-toggle"><i
                 class="fa fa-angle-down"></i></span>
             <ul class="sub-menu">
-              <li><a href="index.html">Homepage 1</a></li>
-              <li><a href="homepage-2.html">Homepage 2</a></li>
-              <li><a href="homepage-3.html">Homepage 3</a></li>
+              
             </ul>
           </li>
           <li><a href="about.html">About</a></li>
@@ -612,7 +610,7 @@
           <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
           <li><a href="#"><i class="fa fa-instagram"></i></a></li>
         </ul>
-        <p>Bready Store <span>|</span> PO Box 16122 Collins Street WestCD9B33 <span>|</span> Victoria 8007 Australia</p>
+        <p>NGLO Cakes <span>|</span>1621 Preston Park drive, <span>|</span>Duluth 30096 Georgia </p>
         <p>Hotline: (+84 ) 7534 9773 <span>|</span> Fax: +123 874 548</p><a class="ps-btn" href="#"><i
             class="ba-route"></i> Find us on map</a>
       </div>
@@ -620,7 +618,7 @@
     <div class="ps-footer__copyright">
       <div class="container">
         <p>
-          © Copyright by <strong>Bready Store</strong>. Design by<a href="#"> Alena Studio.</a></p>
+          © Copyright by <strong>NGLO Cakes</strong>. Design by<a href="#"> Alena Studio.</a></p>
       </div>
     </div>
   </div>
