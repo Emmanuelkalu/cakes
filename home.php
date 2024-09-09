@@ -17,7 +17,7 @@
   <meta name="author" content="">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <title>Bready</title>
+  <title>NGLO - Cakes</title>
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CLora:400,700" rel="stylesheet">
   <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="plugins/bakery-icon/style.css">
@@ -72,22 +72,21 @@
     <div class="header__top">
       <div class="ps-container">
         <div class="left">
-          <p>460 West 34th Street, 15th floor, New York - Hotline: 804-377-3580 - 804-399-3580</p>
+          <p>1621 Preston Park drive,>Duluth 30096, Georgia - Hotline: +147-079-108770</p> 
         </div>
         <div class="right">
           <div class="btn-group ps-dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">USD<i class="fa fa-angle-down"></i></a>
             <ul class="dropdown-menu">
               <li><a href="#"> USD</a></li>
-              <li><a href="#"> SGD</a></li>
-              <li><a href="#">JPN</a></li>
+              
             </ul>
           </div>
           <div class="btn-group ps-dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Language<i class="fa fa-angle-down"></i></a>
+              aria-haspopup="true" aria-expanded="false">English<i class="fa fa-angle-down"></i></a>
             <ul class="dropdown-menu">
-              <li><a href="#">English</a></li>
-              <li><a href="#">Japanese</a></li>
+            
+              
             </ul>
           </div>
           <ul class="ps-list--social">
@@ -579,6 +578,14 @@
           <input class="form-control" type="text" placeholder="">
         </div>
         <div class="form-group">
+          <label>Name <sup>*</sup></label>
+          <input class="form-control" type="text" placeholder="">
+        </div>
+        <div class="form-group">
+          <label>Name <sup>*</sup></label>
+          <input class="form-control" type="text" placeholder="">
+        </div>
+        <div class="form-group">
           <label>Email <sup>*</sup></label>
           <input class="form-control" type="text" placeholder="">
         </div>
@@ -611,7 +618,7 @@
           <li><a href="#"><i class="fa fa-instagram"></i></a></li>
         </ul>
         <p>NGLO Cakes <span>|</span>1621 Preston Park drive, <span>|</span>Duluth 30096 Georgia </p>
-        <p>Hotline: (+84 ) 7534 9773 <span>|</span> Fax: +123 874 548</p><a class="ps-btn" href="#"><i
+        <p>Hotline: +147-079-10877 <span>|</span> Fax: +123 874 548</p><a class="ps-btn" href="#"><i
             class="ba-route"></i> Find us on map</a>
       </div>
     </div>
