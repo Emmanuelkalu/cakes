@@ -175,7 +175,7 @@
               
             </ul>
           </li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="#aboutUs">About</a></li>
           <li class="menu-item-has-children"><a href="product-listing.html">product</a><span class="sub-toggle"><i
                 class="fa fa-angle-down"></i></span>
             <ul class="sub-menu">
@@ -190,26 +190,11 @@
               <li><a href="menu.html">Menu</a></li>
               <li><a href="cart.html">Shopping Cart</a></li>
               <li><a href="checkout.html">Checkout</a></li>
-              <li><a href="whishlist.html">Whishlist</a></li>
-              <li><a href="compare.html">Compare</a></li>
-              <li><a href="404-page.html">Page 404</a></li>
             </ul>
           </li>
-          <li class="menu-item-has-children"><a href="blog-grid.html">Blogs</a><span class="sub-toggle"><i
-                class="fa fa-angle-down"></i></span>
-            <ul class="sub-menu">
-              <li><a href="blog-grid.html">Blog Grid</a></li>
-              <li class="menu-item-has-children"><a href="blog-list.html">Blog Listing</a><span class="sub-toggle"><i
-                    class="fa fa-angle-down"></i></span>
-                <ul class="sub-menu">
-                  <li><a href="blog-list.html">Blog List Has Sidebar</a></li>
-                  <li><a href="blog-list.html">Blog List No Sidebar</a></li>
-                </ul>
-              </li>
-              <li><a href="blog-detail.html">Blog Detail</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact Us</a></li>
+    
+          
+          <li><a href="#contactUs">Contact Us</a></li>
         </ul>
       </div>
     </nav>
@@ -259,7 +244,7 @@
   <div class="ps-home-about--2">
     <div class="ps-container">
       <div class="ps-section__header text-center">
-        <h3 class="ps-section__title">About Us</h3>
+        <h3 class="ps-section__title" id="aboutUs">About Us</h3>
         <p>Passion with flour</p><span><img src="images/icons/floral.png" alt=""></span>
       </div>
       <div class="ps-section__content">
@@ -296,16 +281,16 @@
       </div>
       <div class="ps-section__content">
         <ul class="tab-list" role="tablist">
-          <li class="active"><a href="#tab_1" aria-controls="tab_1" role="tab" data-toggle="tab"><i
-                class="ba-bread-2"></i>Set Lunch #01</a></li>
-          <li><a href="#tab_2" aria-controls="tab_2" role="tab" data-toggle="tab"><i class="ba-sourdough"></i>Combo
-              Bread</a></li>
-          <li><a href="#tab_3" aria-controls="tab_3" role="tab" data-toggle="tab"><i class="ba-cake-3"></i>Combo
-              Bakery</a></li>
-          <li><a href="#tab_4" aria-controls="tab_4" role="tab" data-toggle="tab"><i class="ba-smoothie"></i>Eric
-              Buchanan</a></li>
-          <li><a href="#tab_5" aria-controls="tab_5" role="tab" data-toggle="tab"><i class="ba-pizza"></i>Mamie
-              Douglas</a></li>
+          <li class="active"><a href="#tab_1" aria-controls="tab_1" role="tab" data-toggle="tab"><i class="ba-cake-2"></i>Cake Tiers
+          </a></li>
+          <li><a href="#tab_2" aria-controls="tab_2" role="tab" data-toggle="tab"><i class="ba-cake"></i>Buttercream 
+         </a></li>
+          <li><a href="#tab_3" aria-controls="tab_3" role="tab" data-toggle="tab"><i class="ba-cupcake"></i>Cupcakes
+              </a></li>
+          <li><a href="#tab_4" aria-controls="tab_4" role="tab" data-toggle="tab"><i class="ba-smoothie"></i>Macrons 
+          </a></li>
+          <!-- <li><a href="#tab_5" aria-controls="tab_5" role="tab" data-toggle="tab"><i class="ba-pizza"></i>Mamie
+              Douglas</a></li> -->
         </ul>
         <div class="tab-content">
           <div class="tab-pane active" role="tabpanel" id="tab_1">
@@ -313,19 +298,19 @@
               <div class="ps-block__thumbnail"><img src="images/pages/set.png" alt="">
               </div>
               <div class="ps-block__content">
-                <h3>Compo special bread for lunch</h3>
-                <h5>INGREDIENTS:</h5>
-                <p>45 grams plain flour, 1 teaspoon cocoa powder, 1 egg, 10 grams melted butter, 100 millilitres milk.
-                </p>
-                <h5>PREPARATION:</h5>
-                <p>Pie gummi bears jujubes cake lemon drops gummi bears croissant macaroon pie. Fruitcake tootsie roll
-                  chocolate cake. Carrot cake cake bear claw jujubes topping cake apple pie. Jujubes…</p>
+                <h3>Cake Tiers </h3>
+                <p>1 Tiered Tall Cakes begins at: <strong>$175</strong></p>
+                <p>2 Tiered cakes begin at: <strong>$275</strong> for a 5” and 7” and <strong>$310</strong> 
+                for a 6” and 8”.</p>
+                <p>3 Tiered cakes begins at:  <strong>$390</strong></p>
+
+                               
                 <div class="ps-block--product-status">
-                  <h5>Only today: <del>£8.55</del> <strong> £5.99</strong></h5>
-                  <div class="ps-block__status"><span>Already sold: <strong>120</strong></span><span
-                      class="right">Available: <strong>500</strong></span>
+                  <h5> <del></del> <strong> </strong></h5>
+                  <div ><span> <strong></strong></span><span
+                      class="right"> <strong></strong></span>
                     <div class="clearfix"></div>
-                    <div class="ps-status-bar" data-width="40"><span></span></div><a class="ps-btn" href="#">Delivery
+                    <div  data-width="40"><span></span></div><a class="ps-btn" href="#contactUs">Order
                       Now</a>
                   </div>
                 </div>
@@ -337,19 +322,18 @@
               <div class="ps-block__thumbnail"><img src="images/banner/slider-1.png" alt="">
               </div>
               <div class="ps-block__content">
-                <h3>Title Set 2</h3>
-                <h5>INGREDIENTS:</h5>
-                <p>45 grams plain flour, 1 teaspoon cocoa powder, 1 egg, 10 grams melted butter, 100 millilitres milk.
+                <h3>Butter Cream</h3>
+                <h5>FLAVORS:</h5>
+                <p>Vanilla, Chocolate, Cream Cheese, Red Velvet, Lemon, Almond, Strawberry, Cookies n' Cream, Lemon, Mint, Coconut,
+                  Salted Caramel, Carrot, Coconut, Raspberry, Blackberry, Rum. 
                 </p>
-                <h5>PREPARATION:</h5>
-                <p>Pie gummi bears jujubes cake lemon drops gummi bears croissant macaroon pie. Fruitcake tootsie roll
-                  chocolate cake. Carrot cake cake bear claw jujubes topping cake apple pie. Jujubes…</p>
+                
                 <div class="ps-block--product-status">
-                  <h5>Only today: <del>£8.55</del> <strong> £5.99</strong></h5>
-                  <div class="ps-block__status"><span>Already sold: <strong>120</strong></span><span
-                      class="right">Available: <strong>500</strong></span>
+                  <h5> <strong> </strong></h5>
+                  <div class="ps-block__status"><span><strong></strong></span><span
+                      class="right"><strong></strong></span>
                     <div class="clearfix"></div>
-                    <div class="ps-status-bar" data-width="40"><span></span></div><a class="ps-btn" href="#">Delivery
+                    <div ><span></span></div><a class="ps-btn" href="#contactUs">Order
                       Now</a>
                   </div>
                 </div>
@@ -361,23 +345,27 @@
               <div class="ps-block__thumbnail"><img src="images/banner/slider-2.png" alt="">
               </div>
               <div class="ps-block__content">
-                <h3>Title Set 3</h3>
-                <h5>INGREDIENTS:</h5>
-                <p>45 grams plain flour, 1 teaspoon cocoa powder, 1 egg, 10 grams melted butter, 100 millilitres milk.
-                </p>
-                <h5>PREPARATION:</h5>
-                <p>Pie gummi bears jujubes cake lemon drops gummi bears croissant macaroon pie. Fruitcake tootsie roll
-                  chocolate cake. Carrot cake cake bear claw jujubes topping cake apple pie. Jujubes…</p>
+                <h3>Cupcakes</h3>
+                <h5>Menu:</h5>
+                <p>Frosted cupcakes <strong> $45.00</strong>(Basic) </p>
+                <p>Buttercream Cupacakes <strong> $60.00</strong> </p>
+                <p>Fondant Decorated Cupcakes <strong> $85.00</strong> </p>
+                <p>Lowest order for party is 2 dozen. 
+                One flavor per </p>
+              
                 <div class="ps-block--product-status">
-                  <h5>Only today: <del>£8.55</del> <strong> £5.99</strong></h5>
-                  <div class="ps-block__status"><span>Already sold: <strong>120</strong></span><span
-                      class="right">Available: <strong>500</strong></span>
+                  <h5> <del></del> <strong> </strong></h5>
+                  <div class="ps-block__status"><span> <strong></strong></span><span
+                      class="right"> <strong></strong></span>
                     <div class="clearfix"></div>
-                    <div class="ps-status-bar" data-width="40"><span></span></div><a class="ps-btn" href="#">Delivery
+                    
+                </div>
+                <div ><span></span></div><a class="ps-btn" href="#contactUs">Order
                       Now</a>
                   </div>
-                </div>
+
               </div>
+              
             </div>
           </div>
           <div class="tab-pane" role="tabpanel" id="tab_4">
@@ -385,49 +373,25 @@
               <div class="ps-block__thumbnail"><img src="images/banner/slider-6.png" alt="">
               </div>
               <div class="ps-block__content">
-                <h3>Title Set 4</h3>
-                <h5>INGREDIENTS:</h5>
-                <p>45 grams plain flour, 1 teaspoon cocoa powder, 1 egg, 10 grams melted butter, 100 millilitres milk.
-                </p>
-                <h5>PREPARATION:</h5>
-                <p>Pie gummi bears jujubes cake lemon drops gummi bears croissant macaroon pie. Fruitcake tootsie roll
-                  chocolate cake. Carrot cake cake bear claw jujubes topping cake apple pie. Jujubes…</p>
+                <h3>Macarons</h3>
+                <h5>Menu:</h5>
+                <p>Macarons <strong> $40.00</strong></p>
+                
                 <div class="ps-block--product-status">
-                  <h5>Only today: <del>£8.55</del> <strong> £5.99</strong></h5>
-                  <div class="ps-block__status"><span>Already sold: <strong>120</strong></span><span
-                      class="right">Available: <strong>500</strong></span>
+                  
+                  <div class="ps-block__status"><span> <strong></strong></span><span
+                      class="right"><strong></strong></span>
                     <div class="clearfix"></div>
-                    <div class="ps-status-bar" data-width="40"><span></span></div><a class="ps-btn" href="#">Delivery
+                    
+                </div>
+                <div ><span></span></div><a class="ps-btn" href="#contactUs">Order
                       Now</a>
                   </div>
-                </div>
+
               </div>
             </div>
           </div>
-          <div class="tab-pane" role="tabpanel" id="tab_5">
-            <div class="ps-block--product-set">
-              <div class="ps-block__thumbnail"><img src="images/pages/set.png" alt="">
-              </div>
-              <div class="ps-block__content">
-                <h3>Title Set 5</h3>
-                <h5>INGREDIENTS:</h5>
-                <p>45 grams plain flour, 1 teaspoon cocoa powder, 1 egg, 10 grams melted butter, 100 millilitres milk.
-                </p>
-                <h5>PREPARATION:</h5>
-                <p>Pie gummi bears jujubes cake lemon drops gummi bears croissant macaroon pie. Fruitcake tootsie roll
-                  chocolate cake. Carrot cake cake bear claw jujubes topping cake apple pie. Jujubes…</p>
-                <div class="ps-block--product-status">
-                  <h5>Only today: <del>£8.55</del> <strong> £5.99</strong></h5>
-                  <div class="ps-block__status"><span>Already sold: <strong>120</strong></span><span
-                      class="right">Available: <strong>500</strong></span>
-                    <div class="clearfix"></div>
-                    <div class="ps-status-bar" data-width="40"><span></span></div><a class="ps-btn" href="#">Delivery
-                      Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -514,50 +478,12 @@
   <div class="ps-home-blog">
     <div class="ps-container">
       <div class="ps-section__header">
-        <h3 class="ps-section__title">Our history</h3>
+        <h3 id="contactUs" class="ps-section__title">Order Now</h3>
         <p>Live with passion</p><span><img src="images/icons/floral.png" alt=""></span>
       </div>
-      <div class="ps-section__content">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-            <div class="ps-post">
-              <div class="ps-post__thumbnail"><img src="images/posts/home-1.jpg" alt=""><a class="ps-post__overlay"
-                  href="blog-detail.html"></a></div>
-              <div class="ps-post__content"><span class="ps-post__posted">March 31, 2018</span><a class="ps-post__title"
-                  href="#">BUTTERY TOAST</a><span class="ps-post__byline">By<a href="#"> Alena Studio</a></span>
-                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
-                  to corporate strategy foster collaborative thinking to further…</p><a class="ps-post__morelink"
-                  href="blog-detail.html">Read more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-            <div class="ps-post">
-              <div class="ps-post__thumbnail"><img src="images/posts/home-2.jpg" alt=""><a class="ps-post__overlay"
-                  href="blog-detail.html"></a></div>
-              <div class="ps-post__content"><span class="ps-post__posted">March 31, 2018</span><a class="ps-post__title"
-                  href="#">Pumpkin buns with salted</a><span class="ps-post__byline">By<a href="#"> Alena
-                    Studio</a></span>
-                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
-                  to corporate strategy foster collaborative thinking to further…</p><a class="ps-post__morelink"
-                  href="blog-detail.html">Read more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-            <div class="ps-post">
-              <div class="ps-post__thumbnail"><img src="images/posts/home-3.jpg" alt=""><a class="ps-post__overlay"
-                  href="blog-detail.html"></a></div>
-              <div class="ps-post__content"><span class="ps-post__posted">March 31, 2018</span><a class="ps-post__title"
-                  href="#">Tartine style bread</a><span class="ps-post__byline">By<a href="#"> Alena Studio</a></span>
-                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
-                  to corporate strategy foster collaborative thinking to further…</p><a class="ps-post__morelink"
-                  href="blog-detail.html">Read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
+
+      
     </div>
   </div>
   <!-- <div id="contact-map" data-address="New York, NY" data-title="Funiture!" data-zoom="17"></div> -->
@@ -571,28 +497,31 @@
           <li>Sunday <span> closed</span></li>
         </ul>
       </div>
-      <form class="ps-form--get-in-touch" action="https://nouthemes.net/html/bready/do_action" method="post">
-        <h3>Get in touch</h3>
+      <form  class="ps-form--get-in-touch" action="https://nouthemes.net/html/bready/do_action" method="post">
+        <h3>Get in touch</h3>        
         <div class="form-group">
           <label>Name <sup>*</sup></label>
-          <input class="form-control" type="text" placeholder="">
-        </div>
-        <div class="form-group">
-          <label>Name <sup>*</sup></label>
-          <input class="form-control" type="text" placeholder="">
-        </div>
-        <div class="form-group">
-          <label>Name <sup>*</sup></label>
-          <input class="form-control" type="text" placeholder="">
-        </div>
+          <input class="form-control" type="text" placeholder="" name="nameOf">
+        </div> 
+                
         <div class="form-group">
           <label>Email <sup>*</sup></label>
-          <input class="form-control" type="text" placeholder="">
+          <input class="form-control" type="text" placeholder="" name="emailAddress">
         </div>
         <div class="form-group">
           <label>Phone Number <sup>*</sup></label>
           <input class="form-control" type="text" placeholder="">
         </div>
+        
+        <div class="form-group">
+          <input type="date" id="date" name="date">
+        </div>
+
+        <div class="form-group">
+          <label>Delivery  Address <sup>*</sup></label>
+          <input class="form-control" type="text" placeholder="" name="nameOf">
+        </div>
+
         <div class="form-group submit">
           <button class="ps-btn">Contact us</button>
         </div>
@@ -613,19 +542,19 @@
         <ul class="ps-list--social">
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="https://wa.me/message/DB43W37723D6H1"><i class="fa fa-whatsapp"></i></a></li>
+          <li><a href="#"><i class="fa fa-tiktok"></i></a></li>
           <li><a href="#"><i class="fa fa-instagram"></i></a></li>
         </ul>
         <p>NGLO Cakes <span>|</span>1621 Preston Park drive, <span>|</span>Duluth 30096 Georgia </p>
-        <p>Hotline: +147-079-10877 <span>|</span> Fax: +123 874 548</p><a class="ps-btn" href="#"><i
+        <p>Hotline: +147-079-10877 </p><a class="ps-btn" href="#"><i
             class="ba-route"></i> Find us on map</a>
       </div>
     </div>
     <div class="ps-footer__copyright">
       <div class="container">
         <p>
-          © Copyright by <strong>NGLO Cakes</strong>. Design by<a href="#"> Alena Studio.</a></p>
+          © Copyright by <strong>NGLO Cakes</strong></p>
       </div>
     </div>
   </div>
@@ -634,7 +563,7 @@
       <form class="ps-form--subscribe-popup bg--cover" action="https://nouthemes.net/html/bready/do_action"
         method="post" data-background="images/bg/subscribe.jpg">
         <h3>subscribe email</h3>
-        <p>Follow us & get<strong> 20% OFF</strong>coupon for first purchase !!!!!</p>
+        <p>Follow us & get<strong> 20% OFF</strong></p>
         <div class="form-group">
           <input class="form-control" type="text" placeholder="Enter your email...">
           <button class="ps-btn ps-btn--yellow">Subscribe</button>

@@ -5,7 +5,7 @@ $filePath = ltrim($requestUri, '/cake');
 if (empty($filePath)) {
     include 'home.php';
 } else {
-// server side comment
+
 
     if (file_exists($filePath) || file_exists($filePath . '.php')) {
         file_exists($filePath . '.php') ? $filePath = $filePath . '.php' : null;
