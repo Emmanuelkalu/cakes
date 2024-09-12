@@ -52,6 +52,27 @@
       width: 500px !important;
       left: 100px;
     }
+
+    .ps-block__thumbnail img {
+      height: 300px;
+      width: auto
+    }
+
+    .ps-block--product-set .ps-block__thumbnail {
+      text-align: unset !important;
+    }
+
+    @media (min-width:900px) {
+      .ps-block--product-set {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+      }
+    }
+
+    .ps-form--menu {
+      max-width: 100% !important;
+    }
   </style>
 </head>
 
@@ -72,21 +93,21 @@
     <div class="header__top">
       <div class="ps-container">
         <div class="left">
-          <p>1621 Preston Park drive,>Duluth 30096, Georgia - Hotline: +147-079-108770</p> 
+          <p>1621 Preston Park drive,>Duluth 30096, Georgia - Hotline: +147-079-108770</p>
         </div>
         <div class="right">
           <div class="btn-group ps-dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">USD<i class="fa fa-angle-down"></i></a>
             <ul class="dropdown-menu">
               <li><a href="#"> USD</a></li>
-              
+
             </ul>
           </div>
           <div class="btn-group ps-dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">English<i class="fa fa-angle-down"></i></a>
             <ul class="dropdown-menu">
-            
-              
+
+
             </ul>
           </div>
           <ul class="ps-list--social">
@@ -172,7 +193,7 @@
           <li class="current-menu-item menu-item-has-children"><a href="#">Homepage</a><span class="sub-toggle"><i
                 class="fa fa-angle-down"></i></span>
             <ul class="sub-menu">
-              
+
             </ul>
           </li>
           <li><a href="#aboutUs">About</a></li>
@@ -192,8 +213,8 @@
               <li><a href="checkout.html">Checkout</a></li>
             </ul>
           </li>
-    
-          
+
+
           <li><a href="#contactUs">Contact Us</a></li>
         </ul>
       </div>
@@ -241,6 +262,9 @@
       </div>
     </div>
   </div>
+  <?php include __DIR__ . '/partials/cakelist.php'; ?>
+  <?php include __DIR__ . '/partials/order.php'; ?>
+
   <div class="ps-home-about--2">
     <div class="ps-container">
       <div class="ps-section__header text-center">
@@ -281,14 +305,15 @@
       </div>
       <div class="ps-section__content">
         <ul class="tab-list" role="tablist">
-          <li class="active"><a href="#tab_1" aria-controls="tab_1" role="tab" data-toggle="tab"><i class="ba-cake-2"></i>Cake Tiers
-          </a></li>
-          <li><a href="#tab_2" aria-controls="tab_2" role="tab" data-toggle="tab"><i class="ba-cake"></i>Buttercream 
-         </a></li>
+          <li class="active"><a href="#tab_1" aria-controls="tab_1" role="tab" data-toggle="tab"><i
+                class="ba-cake-2"></i>Cake Tiers
+            </a></li>
+          <li><a href="#tab_2" aria-controls="tab_2" role="tab" data-toggle="tab"><i class="ba-cake"></i>Buttercream
+            </a></li>
           <li><a href="#tab_3" aria-controls="tab_3" role="tab" data-toggle="tab"><i class="ba-cupcake"></i>Cupcakes
-              </a></li>
-          <li><a href="#tab_4" aria-controls="tab_4" role="tab" data-toggle="tab"><i class="ba-smoothie"></i>Macrons 
-          </a></li>
+            </a></li>
+          <li><a href="#tab_4" aria-controls="tab_4" role="tab" data-toggle="tab"><i class="ba-smoothie"></i>Macrons
+            </a></li>
           <!-- <li><a href="#tab_5" aria-controls="tab_5" role="tab" data-toggle="tab"><i class="ba-pizza"></i>Mamie
               Douglas</a></li> -->
         </ul>
@@ -300,17 +325,16 @@
               <div class="ps-block__content">
                 <h3>Cake Tiers </h3>
                 <p>1 Tiered Tall Cakes begins at: <strong>$175</strong></p>
-                <p>2 Tiered cakes begin at: <strong>$275</strong> for a 5” and 7” and <strong>$310</strong> 
-                for a 6” and 8”.</p>
-                <p>3 Tiered cakes begins at:  <strong>$390</strong></p>
+                <p>2 Tiered cakes begin at: <strong>$275</strong> for a 5” and 7” and <strong>$310</strong>
+                  for a 6” and 8”.</p>
+                <p>3 Tiered cakes begins at: <strong>$390</strong></p>
 
-                               
+
                 <div class="ps-block--product-status">
                   <h5> <del></del> <strong> </strong></h5>
-                  <div ><span> <strong></strong></span><span
-                      class="right"> <strong></strong></span>
+                  <div><span> <strong></strong></span><span class="right"> <strong></strong></span>
                     <div class="clearfix"></div>
-                    <div  data-width="40"><span></span></div><a class="ps-btn" href="#contactUs">Order
+                    <div data-width="40"><span></span></div><a class="ps-btn" href="#contactUs">Order
                       Now</a>
                   </div>
                 </div>
@@ -324,16 +348,17 @@
               <div class="ps-block__content">
                 <h3>Butter Cream</h3>
                 <h5>FLAVORS:</h5>
-                <p>Vanilla, Chocolate, Cream Cheese, Red Velvet, Lemon, Almond, Strawberry, Cookies n' Cream, Lemon, Mint, Coconut,
-                  Salted Caramel, Carrot, Coconut, Raspberry, Blackberry, Rum. 
+                <p>Vanilla, Chocolate, Cream Cheese, Red Velvet, Lemon, Almond, Strawberry, Cookies n' Cream, Lemon,
+                  Mint, Coconut,
+                  Salted Caramel, Carrot, Coconut, Raspberry, Blackberry, Rum.
                 </p>
-                
+
                 <div class="ps-block--product-status">
                   <h5> <strong> </strong></h5>
                   <div class="ps-block__status"><span><strong></strong></span><span
                       class="right"><strong></strong></span>
                     <div class="clearfix"></div>
-                    <div ><span></span></div><a class="ps-btn" href="#contactUs">Order
+                    <div><span></span></div><a class="ps-btn" href="#contactUs">Order
                       Now</a>
                   </div>
                 </div>
@@ -350,22 +375,22 @@
                 <p>Frosted cupcakes <strong> $45.00</strong>(Basic) </p>
                 <p>Buttercream Cupacakes <strong> $60.00</strong> </p>
                 <p>Fondant Decorated Cupcakes <strong> $85.00</strong> </p>
-                <p>Lowest order for party is 2 dozen. 
-                One flavor per </p>
-              
+                <p>Lowest order for party is 2 dozen.
+                  One flavor per </p>
+
                 <div class="ps-block--product-status">
                   <h5> <del></del> <strong> </strong></h5>
-                  <div class="ps-block__status"><span> <strong></strong></span><span
-                      class="right"> <strong></strong></span>
+                  <div class="ps-block__status"><span> <strong></strong></span><span class="right">
+                      <strong></strong></span>
                     <div class="clearfix"></div>
-                    
-                </div>
-                <div ><span></span></div><a class="ps-btn" href="#contactUs">Order
-                      Now</a>
+
                   </div>
+                  <div><span></span></div><a class="ps-btn" href="#contactUs">Order
+                    Now</a>
+                </div>
 
               </div>
-              
+
             </div>
           </div>
           <div class="tab-pane" role="tabpanel" id="tab_4">
@@ -376,22 +401,22 @@
                 <h3>Macarons</h3>
                 <h5>Menu:</h5>
                 <p>Macarons <strong> $40.00</strong></p>
-                
+
                 <div class="ps-block--product-status">
-                  
+
                   <div class="ps-block__status"><span> <strong></strong></span><span
                       class="right"><strong></strong></span>
                     <div class="clearfix"></div>
-                    
-                </div>
-                <div ><span></span></div><a class="ps-btn" href="#contactUs">Order
-                      Now</a>
+
                   </div>
+                  <div><span></span></div><a class="ps-btn" href="#contactUs">Order
+                    Now</a>
+                </div>
 
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -401,8 +426,7 @@
     <div class="ps-container">
       <div class="ps-carousel--testimonial owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="5000"
         data-owl-gap="0" data-owl-nav="false" data-owl-dots="true" data-owl-item="1" data-owl-item-xs="1"
-        data-owl-item-sm="1" data-owl-item-md="1" data-owl-item-lg="1" data-owl-duration="1000" data-owl-mousedrag="off"
-        data-owl-animate-in="fadeIn" data-owl-animate-out="fadeOut">
+        data-owl-item-sm="1" data-owl-item-md="1" data-owl-item-lg="1" data-owl-duration="1000" data-owl-mousedrag="off"  data-owl-animate-in="fadeIn" data-owl-animate-out="fadeOut">
         <div class="ps-block--tesimonial">
           <div class="ps-block__user"><img src="images/user/1.jpg" alt=""></div>
           <div class="ps-block__content">
@@ -512,16 +536,7 @@
           <label>Phone Number <sup>*</sup></label>
           <input class="form-control" type="text" placeholder="">
         </div>
-        
-        <div class="form-group">
-          <input type="date" id="date" name="date">
-        </div>
-
-        <div class="form-group">
-          <label>Delivery  Address <sup>*</sup></label>
-          <input class="form-control" type="text" placeholder="" name="nameOf">
-        </div>
-
+      
         <div class="form-group submit">
           <button class="ps-btn">Contact us</button>
         </div>
@@ -572,7 +587,7 @@
     </div>
   </div>
   <div id="back2top"><i class="fa fa-angle-up"></i></div>
-  <div class="ps-loading">
+  <!-- <div class="ps-loading d-none">
     <div class="rectangle-bounce">
       <div class="rect1"></div>
       <div class="rect2"></div>
@@ -580,7 +595,7 @@
       <div class="rect4"></div>
       <div class="rect5"></div>
     </div>
-  </div>
+  </div> -->
   <!-- Plugins-->
   <!-- <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
   <script src="plugins/jquery/dist/jquery.min.js"></script>
@@ -598,7 +613,7 @@
   <script src="plugins/slick-animation.min.js"></script>
   <script src="plugins/jquery.slimscroll.min.js"></script>
   <!-- Custom scripts-->
-  <script src="js/main.js?v=1"></script>
+  <script src="js/main.js?v=<?php echo time(); ?>"></script>
   <!-- <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC9UyRrFn8cIqD5cAtLYg3aVSNREWuaQQ&amp;callback=initMap"></script> -->
 </body>

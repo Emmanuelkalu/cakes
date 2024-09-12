@@ -1,6 +1,6 @@
 <?php
 $requestUri = $_SERVER['REQUEST_URI'];
-$filePath = ltrim($requestUri, '/cake');
+$filePath = ltrim($requestUri, '/cakes');
 
 if (empty($filePath)) {
     include 'home.php';
