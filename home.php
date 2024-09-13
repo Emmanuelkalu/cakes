@@ -285,10 +285,12 @@
                 <img src="images/line.svg" class="line">
               </div>
               <div class="ps-block__content">
-                <h3>Since from 1790</h3>
-                <p>When someone mentions barbecue images comes to the mind like cooking at the backyard grill, a social
-                  gathering, cooking outdoors and cooking meat slowly over wood and smoke that adds flavor to the food.
-                  Different cooks have different preferences and style in their cooking.</p><img
+                <h3>NGLO Cakes</h3>
+                <p>At NGLO Cake, we create custom cakes that bring your celebrations to life. 
+                  With a passion for baking and attention to detail, 
+                  we craft stunning, delicious cakes using the finest ingredients. 
+                  Whether it’s a birthday, wedding, or special event, our cakes add 
+                  the perfect touch of sweetness to your moments. Let us make your celebrations unforgettable!</p><img
                   src="images/cakes/glo.svg" style="height:60px; widtha:auto" alt="">
               </div>
             </div>
