@@ -264,41 +264,6 @@
   </div>
   <?php include __DIR__ . '/partials/cakelist.php'; ?>
   <?php include __DIR__ . '/partials/order.php'; ?>
-
-  <div class="ps-home-about--2">
-    <div class="ps-container">
-      <div class="ps-section__header text-center">
-        <h3 class="ps-section__title" id="aboutUs">About Us</h3>
-        <p>Passion with flour</p><span><img src="images/icons/floral.png" alt=""></span>
-      </div>
-      <div class="ps-section__content">
-        <!-- <ul class="tab-list" role="tablist">
-          <li class="active"><a href="#tab_01" aria-controls="tab_01" role="tab" data-toggle="tab">History</a></li>
-          <li><a href="#tab_02" aria-controls="tab_02" role="tab" data-toggle="tab">Our Team</a></li>
-          <li><a href="#tab_03" aria-controls="tab_03" role="tab" data-toggle="tab">Awards</a></li>
-        </ul> -->
-        <div class="tab-content">
-          <div class="tab-pane active" id="tab_01" role="tabpanel">
-            <div class="ps-block--signature ps-block--signature--2">
-              <div class="ps-block__thumbnail"><img src="images/ccw.png" class="ink" style="width:380px; height:auto"
-                  alt="">
-                <img src="images/line.svg" class="line">
-              </div>
-              <div class="ps-block__content">
-                <h3>NGLO Cakes</h3>
-                <p>At NGLO Cake, we create custom cakes that bring your celebrations to life. 
-                  With a passion for baking and attention to detail, 
-                  we craft stunning, delicious cakes using the finest ingredients. 
-                  Whether it’s a birthday, wedding, or special event, our cakes add 
-                  the perfect touch of sweetness to your moments. Let us make your celebrations unforgettable!</p><img
-                  src="images/cakes/glo.svg" style="height:60px; widtha:auto" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="ps-product-collection">
     <div class="ps-container">
       <div class="ps-section__header text-center">
@@ -423,6 +388,41 @@
       </div>
     </div>
   </div>
+  <div class="ps-home-about--2">
+    <div class="ps-container">
+      <div class="ps-section__header text-center">
+        <h3 class="ps-section__title" id="aboutUs">About Us</h3>
+        <p>Passion with flour</p><span><img src="images/icons/floral.png" alt=""></span>
+      </div>
+      <div class="ps-section__content">
+        <!-- <ul class="tab-list" role="tablist">
+          <li class="active"><a href="#tab_01" aria-controls="tab_01" role="tab" data-toggle="tab">History</a></li>
+          <li><a href="#tab_02" aria-controls="tab_02" role="tab" data-toggle="tab">Our Team</a></li>
+          <li><a href="#tab_03" aria-controls="tab_03" role="tab" data-toggle="tab">Awards</a></li>
+        </ul> -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab_01" role="tabpanel">
+            <div class="ps-block--signature ps-block--signature--2">
+              <div class="ps-block__thumbnail"><img src="images/ccw.png" class="ink" style="width:380px; height:auto"
+                  alt="">
+                <img src="images/line.svg" class="line">
+              </div>
+              <div class="ps-block__content">
+                <h3>NGLO Cakes</h3>
+                <p>At NGLO Cake, we create custom cakes that bring your celebrations to life. 
+                  With a passion for baking and attention to detail, 
+                  we craft stunning, delicious cakes using the finest ingredients. 
+                  Whether it’s a birthday, wedding, or special event, our cakes add 
+                  the perfect touch of sweetness to your moments. Let us make your celebrations unforgettable!</p><img
+                  src="images/cakes/glo.svg" style="height:60px; widtha:auto" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Testimonials-->
   <div class="ps-testimonials bg--cover" data-background="images/bg/testimonials.jpg">
     <div class="ps-container">

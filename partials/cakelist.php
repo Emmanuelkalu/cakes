@@ -51,8 +51,7 @@
                                         </div>
                                         <div class="ps-product__content">
                                             <a class="ps-product__title"
-                                                href="https://warethemes.com/wordpress/bready/product/pie-topping-jelly/">Pie
-                                                topping jelly gummi bears</a>
+                                                href="https://warethemes.com/wordpress/bready/product/pie-topping-jelly/">1 Tiered Cake</a>
                                             <p>
                                                 <a href="https://warethemes.com/wordpress/bready/product-category/cupcake/"
                                                     rel="tag">Cupcake</a> - <a
@@ -85,7 +84,7 @@
                                                 <span class="woocs_price_code" data-currency=""
                                                     data-redraw-id="66e36d6f099fc" data-product-id="35"><span
                                                         class="woocommerce-Price-amount amount"><span
-                                                            class="woocommerce-Price-currencySymbol">$</span>2.50</span></span>
+                                                            class="woocommerce-Price-currencySymbol">$</span>175.00</span></span>
                                             </p>
                                         </div>
                                     </div>
@@ -127,8 +126,7 @@
                                         </div>
                                         <div class="ps-product__content">
                                             <a class="ps-product__title"
-                                                href="https://warethemes.com/wordpress/bready/product/fruitcake-dragee/">Fruitcake
-                                                dragée</a>
+                                                href="https://warethemes.com/wordpress/bready/product/fruitcake-dragee/">2 Tiered Cake </a>
                                             <p>
                                                 <a href="https://warethemes.com/wordpress/bready/product-category/organic/"
                                                     rel="tag">Organic</a> - <a
@@ -161,9 +159,9 @@
                                                 <span class="woocs_price_code" data-currency=""
                                                     data-redraw-id="66e36d6f0ad01" data-product-id="31"><span
                                                         class="woocommerce-Price-amount amount"><span
-                                                            class="woocommerce-Price-currencySymbol">$</span>6.00</span>
+                                                            class="woocommerce-Price-currencySymbol">$</span>275.00</span>
                                                     – <span class="woocommerce-Price-amount amount"><span
-                                                            class="woocommerce-Price-currencySymbol">$</span>8.00</span></span>
+                                                            class="woocommerce-Price-currencySymbol">$</span>310.00</span></span>
                                             </p>
                                         </div>
                                     </div>
@@ -202,8 +200,7 @@
                                         </div>
                                         <div class="ps-product__content">
                                             <a class="ps-product__title"
-                                                href="https://warethemes.com/wordpress/bready/product/sweet-roll-souffle/">Sweet
-                                                roll soufflé</a>
+                                                href="https://warethemes.com/wordpress/bready/product/sweet-roll-souffle/">3 Tired Cake</a>
                                             <p>
                                                 <a href="https://warethemes.com/wordpress/bready/product-category/cupcake/"
                                                     rel="tag">Cupcake</a> - <a
@@ -236,9 +233,9 @@
                                                 <span class="woocs_price_code" data-currency=""
                                                     data-redraw-id="66e36d6f0bb1c" data-product-id="27"><span
                                                         class="woocommerce-Price-amount amount"><span
-                                                            class="woocommerce-Price-currencySymbol">$</span>6.00</span>
+                                                            class="woocommerce-Price-currencySymbol">$</span>390.00</span>
                                                     – <span class="woocommerce-Price-amount amount"><span
-                                                            class="woocommerce-Price-currencySymbol">$</span>8.00</span></span>
+                                                            class="woocommerce-Price-currencySymbol">$</span></span></span>
                                             </p>
                                         </div>
                                     </div>
@@ -276,8 +273,7 @@
                                         </div>
                                         <div class="ps-product__content">
                                             <a class="ps-product__title"
-                                                href="https://warethemes.com/wordpress/bready/product/jujubes-gummi/">Jujubes
-                                                gummi</a>
+                                                href="https://warethemes.com/wordpress/bready/product/jujubes-gummi/">Cupcakes</a>
                                             <p>
                                                 <a href="https://warethemes.com/wordpress/bready/product-category/cupcake/"
                                                     rel="tag">Cupcake</a> - <a
@@ -331,8 +327,7 @@
                                         </div>
                                         <div class="ps-product__content">
                                             <a class="ps-product__title"
-                                                href="https://warethemes.com/wordpress/bready/product/jujubes-gummi-bears/">Jujubes
-                                                gummi bears</a>
+                                                href="https://warethemes.com/wordpress/bready/product/jujubes-gummi-bears/">Macarons</a>
                                             <p>
                                                 <a href="https://warethemes.com/wordpress/bready/product-category/cupcake/"
                                                     rel="tag">Cupcake</a> - <a
