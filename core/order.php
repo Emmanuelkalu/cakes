@@ -1,16 +1,16 @@
 <?php
-ini_set("display_erros", 1);
+ini_set("display_erros", 0);
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
 require "vendor/autoload.php";
+include 'core/core.php';
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    include 'core/core.php';
-
+    try {
+        //code...
 
     // Collecting form data
     $name = $_POST['name'];
@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             //Tell PHPMailer to use SMTP
             $mail->isSMTP();
             //Enable SMTP debugging
-            $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+                $mail->SMTPDebug = SMTP::DEBUG_OFF;
             //Set the hostname of the mail server
             $mail->Host = 'nglocakes.com';
             //Set the SMTP port number - likely to be 25, 465 or 587
@@ -88,8 +88,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Email content
             $mail->setFrom('orders@nglocakes.com', 'Order Notification');
             $mail->addAddress('chida.codes@gmail.com');
-            $mail->Subject = 'Order Confirmation';
-            $mail->Body = "Thank you for your order, $name. Here are your details:\n\n" .
+                $mail->addAddress('ihenschly@gmail.com');
+                $mail->Subject = 'New Order ';
+                $mail->Body = "New order for NGLO, $name. Here are the details:\n\n" .
                 "Event Date: $date\n" .
                 "Delivery Address: $deliveryAddress\n" .
                 "Phone Number: $phoneNumber\n" .
@@ -104,14 +105,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (!$mail->send()) {
                 echo 'Mailer Error: ' . $mail->ErrorInfo;
             } else {
-                echo 'Order placed successfully!';
+                    header('Location: /home?success=Order%20placed%20successfully.');
+                    exit;
             }
         } else {
-            echo "Sorry, there was an error uploading your file.";
+                header('Location: /home?error=Order%20not%20placed.%20Please%20try%20again.');
         }
     }
 
     $stmt->close();
     $conn->close();
+    } catch (\Throwable $th) {
+        error_log($th->getMessage());
+        header('Location: /home?error=An%20error%20occurred.%20Please%20try%20again.');
+    }
+
 }
 ?>
