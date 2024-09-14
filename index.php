@@ -1,7 +1,11 @@
 <?php
 function routeRequest($requestUri, $base)
 {
-    $filePath = str_replace($base, '', $requestUri);
+    if (empty($base)) {
+        $filePath = str_replace('/', '', $requestUri);
+    } else {
+        $filePath = str_replace($base, '', $requestUri);
+    }
     // echo $filePath;
     if (empty($filePath)) {
         return 'home.php';
@@ -26,7 +30,7 @@ function includeFile($filePath)
 }
 
 $requestUri = $_SERVER['REQUEST_URI'];
-$base = '/';
+$base = '';
 $filePath = routeRequest($requestUri, $base);
 includeFile($filePath);
 ?>
