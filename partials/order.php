@@ -13,7 +13,7 @@
       
         <div class="col-lg-6">
             <form id="orderForm" style="box-shadow:0 4px 25px #b8872b20; border-radius: 10px; padding: 50px 35px !important;"
-                class="pb-4   ps-form--order-form" enctype="multipart/form-data" action="core/order.php"
+                class="pb-4   ps-form--order-form" enctype="multipart/form-data" action="core/order"
                 method="post">
 
                 <div class="row">
