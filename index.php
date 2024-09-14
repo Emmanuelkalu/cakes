@@ -2,7 +2,7 @@
 function routeRequest($requestUri, $base)
 {
     if (empty($base)) {
-        $filePath = str_replace('/', '', $requestUri);
+        $filePath = $requestUri;
     } else {
         $filePath = str_replace($base, '', $requestUri);
     }
