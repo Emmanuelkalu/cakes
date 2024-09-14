@@ -490,7 +490,16 @@ body {
 }
 @media (max-width:760px){
   .ccw{
-    width: 100% !important
+    width: 98vw !important;
+      text-align: center;
+    }
+    
+    .line {
+      display: none !important;
+    }
+    
+    .ps-banner__container {
+      padding-top: 70px !important;
   }
 
 }
