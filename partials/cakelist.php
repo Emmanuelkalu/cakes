@@ -97,9 +97,9 @@
                                     <div class="ps-product ps-product--horizontal">
                                         <div class="ps-product__thumbnail">
                                             <img loading="lazy" decoding="async" width="260" height="200"
-                                                src="https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/11-1.png"
+                                                src="./images/products/5.png"
                                                 class="attachment-noubready_260x200 size-noubready_260x200" alt=""
-                                                srcset="https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/11-1.png 1040w, https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/11-1-600x462.png 600w"
+                                                srcset="./images/products/5.png 1040w, ./images/products/5.png 600w"
                                                 sizes="(max-width: 260px) 100vw, 260px"> <span
                                                 class="ps-badge ps-badge--sale"><img decoding="async"
                                                     src="https://warethemes.com/wordpress/bready/wp-content/themes/bready/assets/images/icons/badge-brown.png"
@@ -174,9 +174,9 @@
                                     <div class="ps-product ps-product--horizontal">
                                         <div class="ps-product__thumbnail">
                                             <img loading="lazy" decoding="async" width="260" height="200"
-                                                src="https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/10-1.png"
+                                                src="./images/products/6.png"
                                                 class="attachment-noubready_260x200 size-noubready_260x200" alt=""
-                                                srcset="https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/10-1.png 1040w, https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/10-1-600x462.png 600w"
+                                                srcset="./images/products/6.png 1040w, ./images/products/6.png 600w"
                                                 sizes="(max-width: 260px) 100vw, 260px">
                                             <ul class="ps-product__actions">
                                                 <li><a href="#quickview-modal" data-product_id="27"
@@ -248,9 +248,9 @@
                                     <div class="ps-product ps-product--horizontal">
                                         <div class="ps-product__thumbnail">
                                             <img loading="lazy" decoding="async" width="260" height="200"
-                                                src="https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/9-1.png"
+                                                src="./images/products/cupcakes.png"
                                                 class="attachment-noubready_260x200 size-noubready_260x200" alt=""
-                                                srcset="https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/9-1.png 1040w, https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/9-1-600x462.png 600w"
+                                                srcset="./images/products/cupcakes.png 1040w, ./images/products/cupcakes.png 600w"
                                                 sizes="(max-width: 260px) 100vw, 260px">
                                             <ul class="ps-product__actions">
                                                 <li><a href="#quickview-modal" data-product_id="26"
@@ -299,9 +299,9 @@
                                     <div class="ps-product ps-product--horizontal">
                                         <div class="ps-product__thumbnail">
                                             <img loading="lazy" decoding="async" width="260" height="200"
-                                                src="https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/8-1.png"
+                                                src="./images/products/macarons.png"
                                                 class="attachment-noubready_260x200 size-noubready_260x200" alt=""
-                                                srcset="https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/8-1.png 1040w, https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/8-1-600x462.png 600w"
+                                                srcset="./images/products/macarons.png 1040w, ./images/products/macarons.png 600w"
                                                 sizes="(max-width: 260px) 100vw, 260px"> <span class="ps-badge"><img
                                                     decoding="async"
                                                     src="https://warethemes.com/wordpress/bready/wp-content/themes/bready/assets/images/icons/badge-red.png"
