@@ -439,11 +439,11 @@
               <option value="1">4</option>
               <option value="2">5</option>
             </select>
-            <p>“Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit cheesecake.
-              Cookie topping sweet muffin pudding tart bear claw sugar plum croissant.”</p>
+            <p>“NGLO Cake made my daughter's birthday unforgettable! The design was stunning, and the cake 
+              tasted even better than it looked. Everyone was asking for more!.”</p>
           </div>
           <div class="ps-block__footer">
-            <p><strong>Logan May</strong> - CEO & Founder Invision</p>
+            <p><strong>Sarah M</strong> - Event Planner</p>
           </div>
         </div>
         <div class="ps-block--tesimonial">
@@ -456,11 +456,11 @@
               <option value="1">4</option>
               <option value="2">5</option>
             </select>
-            <p>“Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit cheesecake.
-              Cookie topping sweet muffin pudding tart bear claw sugar plum croissant.”</p>
+            <p>“As a wedding photographer, I’ve seen many cakes, but NGLO’s creations always stand out. 
+              Their attention to detail and flavor is unmatched – they’re as delicious as they are beautiful..”</p>
           </div>
           <div class="ps-block__footer">
-            <p><strong>Logan May</strong> - CEO & Founder Invision</p>
+            <p><strong>James T</strong> - Photographer</p>
           </div>
         </div>
         <div class="ps-block--tesimonial">
@@ -473,11 +473,11 @@
               <option value="1">4</option>
               <option value="2">5</option>
             </select>
-            <p>“Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit cheesecake.
-              Cookie topping sweet muffin pudding tart bear claw sugar plum croissant.”</p>
+            <p>“We ordered cakes for a corporate event, and NGLO exceeded our expectations. The cakes were elegant, 
+              delicious, and the team was incredibly easy to work with..”</p>
           </div>
           <div class="ps-block__footer">
-            <p><strong>Logan May</strong> - CEO & Founder Invision</p>
+            <p><strong>Rebecca L</strong> - Corporate Manager</p>
           </div>
         </div>
         <div class="ps-block--tesimonial">
@@ -490,11 +490,11 @@
               <option value="1">4</option>
               <option value="2">5</option>
             </select>
-            <p>“Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit cheesecake.
-              Cookie topping sweet muffin pudding tart bear claw sugar plum croissant.”</p>
+            <p>“As someone in the culinary world, I’m always impressed by NGLO Cake’s creativity and taste. 
+              They’re my go-to for any special occasion!”</p>
           </div>
           <div class="ps-block__footer">
-            <p><strong>Logan May</strong> - CEO & Founder Invision</p>
+            <p><strong>David A</strong> - Chef</p>
           </div>
         </div>
       </div>
@@ -558,10 +558,10 @@
       <div class="container"><a class="ps-logo" href="#"><img src="images/logo-dark.png" alt=""></a>
         <ul class="ps-list--social">
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
           <li><a href="https://wa.me/message/DB43W37723D6H1"><i class="fa fa-whatsapp"></i></a></li>
-          <li><a href="#"><i class="fa fa-tiktok"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.tiktok.com/@nglocakes?_t=8pf0ztpv0HV&_r=1 "><i class="fab fa-tiktok"></i></a></li>
+          <li><a href="https://www.instagram.com/nglocakes?igsh=MXczdHM3bWIzYmRzdg== "><i class="fa fa-instagram"></i></a></li>
         </ul>
         <p>NGLO Cakes <span>|</span>1621 Preston Park drive, <span>|</span>Duluth 30096 Georgia </p>
         <p>Hotline: +147-079-10877 </p><a class="ps-btn" href="#"><i
