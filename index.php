@@ -26,7 +26,7 @@ function includeFile($filePath)
 }
 
 $requestUri = $_SERVER['REQUEST_URI'];
-$base = '';
+$base = '/';
 $filePath = routeRequest($requestUri, $base);
 includeFile($filePath);
 ?>
