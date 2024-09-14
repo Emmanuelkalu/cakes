@@ -30,6 +30,12 @@ function includeFile($filePath)
 }
 
 $requestUri = $_SERVER['REQUEST_URI'];
+if (empty($requestUri)) {
+    header('Location: home');
+    exit;
+}
+
+
 $base = '';
 $filePath = routeRequest($requestUri, $base);
 includeFile($filePath);
