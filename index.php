@@ -1,18 +1,32 @@
 <?php
-$requestUri = $_SERVER['REQUEST_URI'];
-$filePath = str_replace('/', '', $requestUri);
-echo $filePath;
-if (empty($filePath)) {
-    include 'home.php';
-} else {
-    $filePath = file_exists($filePath . '.php') ? $filePath . '.php' : $filePath;
-    if (!file_exists($filePath)) {
-        // Handle the case when the file doesn't exist or is not a PHP file
-        include '404-page.html';
+function routeRequest($requestUri, $base)
+{
+    $filePath = str_replace($base, '', $requestUri);
+    // echo $filePath;
+    if (empty($filePath)) {
+        return 'home.php';
+    } else {
+        $filePath = file_exists(__DIR__ . '/' . $filePath . '.php') ? __DIR__ . '/' . $filePath . '.php' : __DIR__ . '/' . $filePath;
+        if (!file_exists($filePath)) {
+            return '404-page.html';
+        } else {
+            return $filePath;
+        }
+    }
+}
+
+function includeFile($filePath)
+{
+    if ($filePath === '404-page.html') {
         header("HTTP/1.0 404 Not Found");
         echo "404 - Page not found";
     } else {
         include $filePath;
     }
 }
+
+$requestUri = $_SERVER['REQUEST_URI'];
+$base = '';
+$filePath = routeRequest($requestUri, $base);
+includeFile($filePath);
 ?>
