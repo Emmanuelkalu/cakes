@@ -13,7 +13,7 @@
       
         <div class="col-lg-6">
             <form id="orderForm" style="box-shadow:0 4px 25px #b8872b20; border-radius: 10px; padding: 50px 35px !important;"
-                class="pb-4   ps-form--order-form" action="https://nouthemes.net/html/bready/do_action"
+                class="pb-4   ps-form--order-form" enctype="multipart/form-data" action="core/order.php"
                 method="post">
 
                 <div class="row">
@@ -98,7 +98,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                         <div class="form-group">
                             <label>Image <sup>*</sup></label>
-                            <input class="form-control" type="file" accept="image/*" placeholder="">
+                            <input class="form-control" type="file" name="file" accept="image/*" placeholder="">
                         </div>
                     </div>
 
@@ -154,3 +154,37 @@
         border: 1px solid #b8872b53 !important;
     }
 </style>
+
+<script>
+  $(document).ready(function() {
+    $('#orderForm').submit(function(e) {
+      e.preventDefault();
+      var formData = new FormData(this);
+      $.ajax({
+        type: 'POST',
+        url: 'core/order.php',
+        data: formData,
+        cache: false,
+        contentType: false,
+        processData: false,
+        beforeSend: function() {
+          $('.ps-btn').html('Processing...');
+          $('.ps-btn').attr('disabled', true);
+        },
+        success: function(data) {
+          if (data == 'Order placed successfully!') {
+            $('#orderForm')[0].reset();
+            $('.ps-btn').html('Order Now');
+            $('.ps-btn').attr('disabled', false);
+            alert('Order placed successfully!');
+          } else {
+            alert(data);
+            $('.ps-btn').html('Order Now');
+            $('.ps-btn').attr('disabled', false);
+          }
+        }
+      });
+    });
+  });
+</script>
+
