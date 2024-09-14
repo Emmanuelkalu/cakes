@@ -248,9 +248,9 @@
             <div class="row">
               <div class="col-lg-6 col-md-5 col-sm-12 col-xs-12 f-text-right ">
                 <div class="ps-banner__container">
-                  <h5 class="animated" data-animation-in="zoomIn" data-delay-in="0.1">EVERY DAY WE BAKE</h5>
-                  <h3 class="animated" data-animation-in="zoomIn" data-delay-in="0.3">Freshly made Cakes</h3>
-                  <p class="animated" data-animation-in="zoomIn" data-delay-in="0.4">Cakery. Taste more. Celebrate more.</p><a
+                  <h5 class="animated" data-animation-in="zoomIn" data-delay-in="0.1">WE CREATE</h5>
+                  <h3 class="animated" data-animation-in="zoomIn" data-delay-in="0.3">Cakes, Made with Love</h3>
+                  <p class="animated" data-animation-in="zoomIn" data-delay-in="0.4">Celebrate more. Savor every moment.</p><a
                     class="ps-btn animated" href="#" data-animation-in="fadeInRight" data-delay-in="0.5">Order now</a>
                 </div>
               </div>
