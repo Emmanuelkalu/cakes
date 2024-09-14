@@ -1,6 +1,6 @@
 <?php
 $requestUri = $_SERVER['REQUEST_URI'];
-$filePath = str_replace('', '', $requestUri);
+$filePath = str_replace('/', '', $requestUri);
 if (empty($filePath)) {
     include 'home.php';
 } else {
