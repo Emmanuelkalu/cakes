@@ -360,9 +360,9 @@
                                     <div class="ps-product ps-product--horizontal">
                                         <div class="ps-product__thumbnail">
                                             <img loading="lazy" decoding="async" width="260" height="200"
-                                                src="https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/7-1.png"
+                                                src="./images/products/souffle.png"
                                                 class="attachment-noubready_260x200 size-noubready_260x200" alt=""
-                                                srcset="https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/7-1.png 1040w, https://warethemes.com/wordpress/bready/wp-content/uploads/2018/08/7-1-600x462.png 600w"
+                                                srcset="./images/products/souffle.png 1040w, ./images/products/souffle.png 600w"
                                                 sizes="(max-width: 260px) 100vw, 260px">
                                             <ul class="ps-product__actions">
                                                 <li><a href="#quickview-modal" data-product_id="21"
@@ -386,8 +386,7 @@
                                         </div>
                                         <div class="ps-product__content">
                                             <a class="ps-product__title"
-                                                href="https://warethemes.com/wordpress/bready/product/cotton-candy-souffle/">Cotton
-                                                candy soufflé</a>
+                                                href="https://warethemes.com/wordpress/bready/product/cotton-candy-souffle/">soufflé</a>
                                             <p>
                                                 <a href="https://warethemes.com/wordpress/bready/product-category/cupcake/"
                                                     rel="tag">Cupcake</a> - <a
