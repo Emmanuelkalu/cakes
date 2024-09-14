@@ -76,6 +76,24 @@
   body {
     scroll-behavior: smooth;
   }
+
+  .swal2-title{
+    font-size: 3rem;
+  }
+
+  .swal2-html-container{
+    font-size: 2.1rem !important;
+  }
+
+  .swal2-popup {
+    /* padding: 35px; */
+    min-width: 350px;
+  }
+
+  .swal2-confirm{
+  background-color: #c9981b !important;
+  padding: 12px 35px !important;
+  }
   </style>
 </head>
 
@@ -610,6 +628,30 @@
   <script src="plugins/jquery.slimscroll.min.js"></script>
   <!-- Custom scripts-->
   <script src="js/main.js?v=<?php echo time(); ?>"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const error = urlParams.get('error');
+      const success = urlParams.get('success');
+
+      if (error) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: error,
+        });
+      } else if (success) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Success',
+          text: success,
+        });
+      }
+    });
+  </script>
   <!-- <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC9UyRrFn8cIqD5cAtLYg3aVSNREWuaQQ&amp;callback=initMap"></script> -->
 </body>
