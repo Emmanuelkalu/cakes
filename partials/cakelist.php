@@ -12,7 +12,7 @@
                                     src="https://warethemes.com/wordpress/bready/wp-content/themes/bready/assets/images/icons/floral.png"
                                     alt="Deal of the day"></span>
                         </div>
-
+<!-- HERE IS THE COMMENT -->
                         <div class="ps-section__content">
                             <div class="row products">
                                 <div data-mh="product" data-id="35"
