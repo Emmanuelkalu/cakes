@@ -23,9 +23,9 @@
                                     <div class="ps-product ps-product--horizontal">
                                         <div class="ps-product__thumbnail">
                                             <img loading="lazy" decoding="async" width="260" height="200"
-                                                src="products/1.png"
+                                                src="./images/products/1.png"
                                                 class="attachment-noubready_260x200 size-noubready_260x200" alt=""
-                                                srcset="products/1.png 1040w, products/1.png 600w"
+                                                srcset="./images/products/1.png 1040w, ./images/products/1.png 600w"
                                                 sizes="(max-width: 260px) 100vw, 260px"> <span class="ps-badge"><img
                                                     decoding="async"
                                                     src="https://warethemes.com/wordpress/bready/wp-content/themes/bready/assets/images/icons/badge-red.png"

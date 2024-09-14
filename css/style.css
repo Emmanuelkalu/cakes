@@ -488,6 +488,12 @@ body {
     width: 100%;
   }
 }
+@media (max-width:760px){
+  .ccw{
+    width: 100% !important
+  }
+
+}
 
 .ps-sidebar {
   padding: 0 30px;

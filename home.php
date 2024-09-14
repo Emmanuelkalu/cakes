@@ -403,8 +403,11 @@
         <div class="tab-content">
           <div class="tab-pane active" id="tab_01" role="tabpanel">
             <div class="ps-block--signature ps-block--signature--2">
-              <div class="ps-block__thumbnail"><img src="images/ccw.png" class="ink" style="width:380px; height:auto"
+              <div class="ps-block__thumbnail ccw"><img src="images/ccw.png" class="ink" style="width:380px; height:auto"
                   alt="">
+                  <style>
+                    
+                  </style>
                 <img src="images/line.svg" class="line">
               </div>
               <div class="ps-block__content">
