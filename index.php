@@ -30,8 +30,7 @@ function includeFile($filePath)
 }
 
 $requestUri = $_SERVER['REQUEST_URI'];
-echo '' . $requestUri . '';
-if (empty($requestUri)) {
+if ($requestUri == '/') {
     header('Location: home');
     exit;
 }
