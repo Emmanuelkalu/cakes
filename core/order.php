@@ -99,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 "Number of Servings: $numberOfServings\n" .
                 "Your Budget: $yourBudget\n" .
                 "Notes: $notes\n" .
-                "Uploaded File: $targetFile";
+                    "Reference Image: <img src='https://nglocakes.com/uploads/$targetFile' height='300' />";
 
             // Send email
             if (!$mail->send()) {
