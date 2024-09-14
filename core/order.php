@@ -1,4 +1,5 @@
 <?php
+ini_set("display_erros", 1);
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
