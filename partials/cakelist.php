@@ -341,13 +341,11 @@
                                                     data-redraw-id="66e36d6f0cec8" data-product-id="25"><del
                                                         aria-hidden="true"><span
                                                             class="woocommerce-Price-amount amount"><span
-                                                                class="woocommerce-Price-currencySymbol">$</span>12.00</span></del>
-                                                    <span class="screen-reader-text">Original price was:
+                                                                class="woocommerce-Price-currencySymbol">$
+                                                    <span class="screen-reader-text">
                                                         $12.00.</span><ins aria-hidden="true"><span
                                                             class="woocommerce-Price-amount amount"><span
-                                                                class="woocommerce-Price-currencySymbol">$</span>10.00</span></ins><span
-                                                        class="screen-reader-text">Current price is:
-                                                        $10.00.</span></span>
+                                                                class="woocommerce-Price-currencySymbol">$</span>10.00</span></ins>
                                             </p>
                                         </div>
                                     </div>
