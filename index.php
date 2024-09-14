@@ -25,6 +25,8 @@ if (empty($request_uri)) {
 // Create the file path
 $file_path = $base_dir . $request_uri . '.php';
 
+
+echo '' . $file_path . '';
 // Check if the file exists
 if (file_exists($file_path)) {
     // Include the file
