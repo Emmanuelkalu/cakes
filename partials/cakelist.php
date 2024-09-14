@@ -8,7 +8,7 @@
                     <div class="ps-container">
                         <div class="ps-section__header text-center">
                             <h3 class="ps-section__title">Deal of the day</h3>
-                            <p>BREADS EVERY DAY</p> <span><img decoding="async"
+                            <p>CAKES FOR EVERY DAY</p> <span><img decoding="async"
                                     src="https://warethemes.com/wordpress/bready/wp-content/themes/bready/assets/images/icons/floral.png"
                                     alt="Deal of the day"></span>
                         </div>

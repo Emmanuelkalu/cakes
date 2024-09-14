@@ -1,19 +1,19 @@
-<div class="container">
+<div class="container" id="orderform">
     <div style="margin:50px"></div>
     <div style="margin:50px"></div>
     <div style="margin:50px"></div>
     <div class="ps-section__header text-center my-4 py-4">
         <h3 class="ps-section__title">Order Form</h3>
-        <p>Making people happy</p><span><img src="images/icons/floral.png" alt=""></span>
+        <p>Let's Craft Your Dream cake</p><span><img src="images/icons/floral.png" alt=""></span>
     </div>
     <div style="margin:50px"></div>
     <div style="margin:50px"></div>
 
     <div class="col-12 d-lg-flex justify-content-center">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <form id="orderForm" style="box-shadow:0 4px 25px #b8872b20; border-radius: 10px;"
-                class="pb-4  ps-form--menu ps-form--order-form" action="https://nouthemes.net/html/bready/do_action"
+      
+        <div class="col-lg-6">
+            <form id="orderForm" style="box-shadow:0 4px 25px #b8872b20; border-radius: 10px; padding: 50px 35px !important;"
+                class="pb-4   ps-form--order-form" enctype="multipart/form-data" action="core/order.php"
                 method="post">
 
                 <div class="row">
@@ -98,7 +98,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                         <div class="form-group">
                             <label>Image <sup>*</sup></label>
-                            <input class="form-control" type="file" accept="image/*" placeholder="">
+                            <input class="form-control" type="file" name="file" accept="image/*" placeholder="">
                         </div>
                     </div>
 
@@ -108,7 +108,7 @@
                             <label>Notes about your order, e.g. special notes for delivery.</label>
                             <textarea name="enterMessage" class="form-control" rows="8" placeholder=""></textarea>
                         </div>
-                        <div class="form-group submit" style="margin-bottom: 80px;">
+                        <div class="form-group submit" style="margin-bottom: 10px;">
                             <button class="ps-btn ps-btn--yellow">Order Now</button>
                         </div>
                     </div>
@@ -116,6 +116,33 @@
 
                 </div>
             </form>
+        </div>
+
+        <div class="col-lg-6">
+                <div style="display: flex; justify-content: center;">
+                    <img src="images/ccw.png" class="ccw ink" style="width:340px; height:auto"
+                alt="">
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <img src="images/line.svg" class="line d-none">
+
+                </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab_01" role="tabpanel">
+                  <div class="ps-block--signature ps-block--signature--2" style="display: block !important; margin-top: -40px; position: relative;">
+                   
+                    <div class="ps-block__content">
+                      <!-- <h3>NGLO Cakes</h3> -->
+                      <p style="font-size: 1.4rem;">At NGLO Cake, we create custom cakes that bring your celebrations to life. 
+                        With a passion for baking and attention to detail, 
+                        we craft stunning, delicious cakes using the finest ingredients. 
+                        Whether it’s a birthday, wedding, or special event, our cakes add 
+                        the perfect touch of sweetness to your moments. Let us make your celebrations unforgettable!</p><img
+                        src="images/cakes/glo.svg" style="height:60px; widtha:auto" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
 
@@ -127,3 +154,37 @@
         border: 1px solid #b8872b53 !important;
     }
 </style>
+
+<script>
+  $(document).ready(function() {
+    $('#orderForm').submit(function(e) {
+      e.preventDefault();
+      var formData = new FormData(this);
+      $.ajax({
+        type: 'POST',
+        url: 'core/order.php',
+        data: formData,
+        cache: false,
+        contentType: false,
+        processData: false,
+        beforeSend: function() {
+          $('.ps-btn').html('Processing...');
+          $('.ps-btn').attr('disabled', true);
+        },
+        success: function(data) {
+          if (data == 'Order placed successfully!') {
+            $('#orderForm')[0].reset();
+            $('.ps-btn').html('Order Now');
+            $('.ps-btn').attr('disabled', false);
+            alert('Order placed successfully!');
+          } else {
+            alert(data);
+            $('.ps-btn').html('Order Now');
+            $('.ps-btn').attr('disabled', false);
+          }
+        }
+      });
+    });
+  });
+</script>
+

@@ -1,123 +1,116 @@
 <?php
-// Define expected variables
-$expected_vars = array('name', 'email', 'phone', 'address', 'image');
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
-// Check if form has been submitted
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Initialize error array
-    $errors = array();
+require "vendor/autoload.php";
 
-    // Loop through expected variables
-    foreach ($expected_vars as $var) {
-        // Check if variable is set
-        if (!isset($_POST[$var]) && $var != 'image') {
-            $errors[] = "Please enter your $var.";
-        }
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    include 'core/core.php';
+
+
+    // Collecting form data
+    $name = $_POST['name'];
+    $email = $_POST['emailAddress'];
+    $date = $_POST['date'];
+    $deliveryAddress = $_POST['deliveryAddress'];
+    $phoneNumber = $_POST['phoneNumber'];
+    $typeOfEvent = $_POST['typeOfEvent'];
+    $cakeColors = $_POST['cakeColors'];
+    $numberOfServings = $_POST['numberOfServings'];
+    $yourBudget = $_POST['yourBudget'];
+    $notes = $_POST['enterMessage'];
+
+    // File upload handling
+    $targetDir = ""; // Directory to save uploaded files
+    $targetFile = $targetDir . basename($_FILES["file"]["name"]);
+    $uploadOk = 1;
+    $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
+
+    // Check if file is an image
+    $check = getimagesize($_FILES["file"]["tmp_name"]);
+    if ($check === false) {
+        echo "File is not an image.";
+        $uploadOk = 0;
     }
 
-    // Check for image upload
-    if (!isset($_FILES['image'])) {
-        $errors[] = "Please upload an image.";
-    } elseif ($_FILES['image']['error'] != 0) {
-        $errors[] = "Error uploading image.";
+    // Check file size (limit to 2MB)
+    if ($_FILES["file"]["size"] > 2000000) {
+        echo "Sorry, your file is too large.";
+        $uploadOk = 0;
     }
 
-    // If no errors, process form data
-    if (empty($errors)) {
-        // Process form data here...
-        $name = $_POST['name'];
-        $emailAddress = $_POST['emailAddress'];
-        $phoneNumber = $_POST['phoneNumber'];
-        $date = $_POST['date'];
-        $time = $_POST['time'];
-        $deliverAddress = $_POST['deliverAddress'];
-        $typeOfEvent = $_POST['typeOfEvent'];
-        $cakeColors = $_POST['cakeColors'];
-        $buttercreamFlavors = $_POST['buttercreamFlavors'];
-        $cakeFlavors = $_POST['cakeFlavors'];
-        $fillingsFlavors = $_POST['fillingsFlavors'];
-        $ourFlavorCombination = $_POST['ourFlavorCombination'];
-        $numberOfTiers = $_POST['numberOfTiers'];
-        $numberOfServings = $_POST['numberOfServings'];
-        $whatIsYourBudget = $_POST['whatIsYourBudget'];
-        $doughnuts = $_POST['doughnuts'];
-        $macarons = $_POST['macarons'];
-        $frostedCupcakes = $_POST['frostedCupcakes'];
-        $buttercreamCupcakes = $_POST['buttercreamCupcakes'];
-        $fondantDecoratedCupcakes = $_POST['fondantDecoratedCupcakes'];
-        $otherDetails = $_POST['otherDetails'];
-        $subject = $_POST['subject'];
-        $enterYourMessage = $_POST['enterYourMessage'];
-        $image = $_FILES['image'];
+    // Allow certain file formats
+    if (!in_array($imageFileType, ['jpg', 'png', 'jpeg', 'gif'])) {
+        echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+        $uploadOk = 0;
+    }
 
-        // Validate file upload
-        $allowedTypes = array('jpg', 'jpeg', 'png', 'gif');
-        $fileType = $image['type'];
-        $fileExtension = $image['name'];
-        $fileExtension = $fileExtension ? strtolower($fileExtension) : '';
-
-        // Check if the file type is allowed
-        if (!in_array($fileExtension, $allowedTypes)) {
-            $errors[] = "Invalid file type. Only JPG, JPEG, PNG, and GIF files are allowed.";
-        }
-
-        // Check if the file size exceeds the maximum allowed size
-        if ($image['size'] > 1024 * 1024 * 5) { // 5MB
-            $errors[] = "File size exceeds the maximum allowed size.";
-        }
-        // Make the file name unique
-        $imageName = uniqid() . '_' . $image['name'];
-
-        // Save image to server
-        $image_path = 'uploads/' . basename($image['name']);
-        move_uploaded_file($image['tmp_name'], $image_path);
-
-        // Assuming a database connection is already established and a table named 'orders' exists with the following schema:
-        // orders table schema:
-        // id (primary key, auto increment), name, email_address, phone_number, date, time, deliver_address, type_of_event, cake_colors, buttercream_flavors, cake_flavors, fillings_flavors, our_flavor_combination, number_of_tiers, number_of_servings, what_is_your_budget, doughnuts, macarons, frosted_cupcakes, buttercream_cupcakes, fondant_decorated_cupcakes, other_details, subject, enter_your_message, image_path
-
-        // Insert form data into the database
-        $query = "INSERT INTO orders (name, email_address, phone_number, date, time, deliver_address, type_of_event, cake_colors, buttercream_flavors, cake_flavors, fillings_flavors, our_flavor_combination, number_of_tiers, number_of_servings, what_is_your_budget, doughnuts, macarons, frosted_cupcakes, buttercream_cupcakes, fondant_decorated_cupcakes, other_details, subject, enter_your_message, image_path) VALUES (:name, :emailAddress, :phoneNumber, :date, :time, :deliverAddress, :typeOfEvent, :cakeColors, :buttercreamFlavors, :cakeFlavors, :fillingsFlavors, :ourFlavorCombination, :numberOfTiers, :numberOfServings, :whatIsYourBudget, :doughnuts, :macarons, :frostedCupcakes, :buttercreamCupcakes, :fondantDecoratedCupcakes, :otherDetails, :subject, :enterYourMessage, :imagePath)";
-        $stmt = $pdo->prepare($query);
-        $stmt->bindParam(':name', $name);
-        $stmt->bindParam(':emailAddress', $emailAddress);
-        $stmt->bindParam(':phoneNumber', $phoneNumber);
-        $stmt->bindParam(':date', $date);
-        $stmt->bindParam(':time', $time);
-        $stmt->bindParam(':deliverAddress', $deliverAddress);
-        $stmt->bindParam(':typeOfEvent', $typeOfEvent);
-        $stmt->bindParam(':cakeColors', $cakeColors);
-        $stmt->bindParam(':buttercreamFlavors', $buttercreamFlavors);
-        $stmt->bindParam(':cakeFlavors', $cakeFlavors);
-        $stmt->bindParam(':fillingsFlavors', $fillingsFlavors);
-        $stmt->bindParam(':ourFlavorCombination', $ourFlavorCombination);
-        $stmt->bindParam(':numberOfTiers', $numberOfTiers);
-        $stmt->bindParam(':numberOfServings', $numberOfServings);
-        $stmt->bindParam(':whatIsYourBudget', $whatIsYourBudget);
-        $stmt->bindParam(':doughnuts', $doughnuts);
-        $stmt->bindParam(':macarons', $macarons);
-        $stmt->bindParam(':frostedCupcakes', $frostedCupcakes);
-        $stmt->bindParam(':buttercreamCupcakes', $buttercreamCupcakes);
-        $stmt->bindParam(':fondantDecoratedCupcakes', $fondantDecoratedCupcakes);
-        $stmt->bindParam(':otherDetails', $otherDetails);
-        $stmt->bindParam(':subject', $subject);
-        $stmt->bindParam(':enterYourMessage', $enterYourMessage);
-        $stmt->bindParam(':imagePath', $image_path);
-        $stmt->execute();
-
-        // Check if the insertion was successful
-        if ($stmt->rowCount() > 0) {
-            echo "Order successfully submitted!";
-        } else {
-            echo "Failed to submit order.";
-        }
-
-        // Save form data to database or perform other actions...
+    // Check if $uploadOk is set to 0 by an error
+    if ($uploadOk == 0) {
+        echo "Sorry, your file was not uploaded.";
     } else {
-        // Handle errors
-        foreach ($errors as $error) {
-            echo $error . "<br>";
+        if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFile)) {
+            // Insert into database
+            $sql = "INSERT INTO orders (name, email, date, deliveryAddress, phoneNumber, typeOfEvent, cakeColors, numberOfServings, yourBudget, notes, filePath) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param("sssssssssss", $name, $email, $date, $deliveryAddress, $phoneNumber, $typeOfEvent, $cakeColors, $numberOfServings, $yourBudget, $notes, $targetFile);
+            $stmt->execute();
+
+
+
+
+
+
+
+            $mail = new PHPMailer();
+            //Tell PHPMailer to use SMTP
+            $mail->isSMTP();
+            //Enable SMTP debugging
+            $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+            //Set the hostname of the mail server
+            $mail->Host = 'nglocakes.com';
+            //Set the SMTP port number - likely to be 25, 465 or 587
+            $mail->Port = 587;
+            //Whether to use SMTP authentication
+            $mail->SMTPAuth = true;
+            $mail->SMTPSecure = 'tls';
+            //Username to use for SMTP authentication
+            $mail->Username = 'orders@nglocakes.com';
+            //Password to use for SMTP authentication
+            $mail->Password = 'Bitmonster11#';
+
+
+
+            // Email content
+            $mail->setFrom('orders@nglocakes.com', 'Order Notification');
+            $mail->addAddress('chida.codes@gmail.com');
+            $mail->Subject = 'Order Confirmation';
+            $mail->Body = "Thank you for your order, $name. Here are your details:\n\n" .
+                "Event Date: $date\n" .
+                "Delivery Address: $deliveryAddress\n" .
+                "Phone Number: $phoneNumber\n" .
+                "Type of Event: $typeOfEvent\n" .
+                "Cake Colors: $cakeColors\n" .
+                "Number of Servings: $numberOfServings\n" .
+                "Your Budget: $yourBudget\n" .
+                "Notes: $notes\n" .
+                "Uploaded File: $targetFile";
+
+            // Send email
+            if (!$mail->send()) {
+                echo 'Mailer Error: ' . $mail->ErrorInfo;
+            } else {
+                echo 'Order placed successfully!';
+            }
+        } else {
+            echo "Sorry, there was an error uploading your file.";
         }
     }
+
+    $stmt->close();
+    $conn->close();
 }
 ?>

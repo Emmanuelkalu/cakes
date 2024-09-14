@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.min.css">
   <link rel="stylesheet" href="plugins/slick/slick/slick.css">
   <link rel="stylesheet" href="plugins/lightGallery-master/dist/css/lightgallery.min.css">
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=242">
   <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
   <!--WARNING: Respond.js doesn't work if you view the page via file://-->
   <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
@@ -48,9 +48,8 @@
 
     .line {
       position: relative;
-      margin-top: -132px;
-      width: 500px !important;
-      left: 100px;
+      margin-top: -92px;
+      width: 400px !important;
     }
 
     .ps-block__thumbnail img {
@@ -74,6 +73,9 @@
       max-width: 100% !important;
     }
 
+  body {
+    scroll-behavior: smooth;
+  }
   </style>
 </head>
 
@@ -125,10 +127,10 @@
         <div class="header__actions"><a class="ps-search-btn" href="#"><i class="ba-magnifying-glass"></i></a><a
             href="#"><i class="ba-profile"></i></a>
           <div class="ps-cart"><a class="ps-cart__toggle" href="#"><span><i>20</i></span><i class="ba-shopping"></i></a>
-            <div class="ps-cart__listing">
-              <div class="ps-cart__content">
+            <div class="ps-cart__listing" style="display:none">
+              <div class="ps-cart__content" >
                 <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
-                  <div class="ps-cart-item__thumbnail"><a href="product-detail.html"></a><img
+                  <div class="ps-cart-item__thumbnail"><a href=""></a><img
                       src="images/shopping-cart/1.png" alt="">
                   </div>
                   <div class="ps-cart-item__content"><a class="ps-cart-item__title"
@@ -191,27 +193,15 @@
           </div>
         </div>
         <ul class="menu">
-          <li class="current-menu-item menu-item-has-children"><a href="#">Homepage</a><span class="sub-toggle"><i
-                class="fa fa-angle-down"></i></span>
-            <ul class="sub-menu">
-
-            </ul>
+          <li class="current-menu-item menu-item-has-children"><a href="./">Home</a><span class="sub-toggle">
           </li>
           <li><a href="#aboutUs">About</a></li>
-          <li class="menu-item-has-children"><a href="product-listing.html">product</a><span class="sub-toggle"><i
+          <li class="menu-item-has-children"><a href="#">product</a><span class="sub-toggle"><i
                 class="fa fa-angle-down"></i></span>
             <ul class="sub-menu">
-              <li><a href="product-listing.html">Product List</a></li>
-              <li><a href="product-detail.html">Product Detail</a></li>
-              <li><a href="order-form.html">Order Form</a></li>
-            </ul>
-          </li>
-          <li class="menu-item-has-children"><a href="about.html">Pages</a><span class="sub-toggle"><i
-                class="fa fa-angle-down"></i></span>
-            <ul class="sub-menu">
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="cart.html">Shopping Cart</a></li>
-              <li><a href="checkout.html">Checkout</a></li>
+              <li><a href="#">Product List</a></li>
+              <li><a href="#">Product Detail</a></li>
+              <li><a href="#">Order Form</a></li>
             </ul>
           </li>
 
@@ -232,7 +222,7 @@
                   <h5 class="animated" data-animation-in="zoomIn" data-delay-in="0.1">EVERY DAY WE BAKE</h5>
                   <h3 class="animated" data-animation-in="zoomIn" data-delay-in="0.3">Freshly made Cakes</h3>
                   <p class="animated" data-animation-in="zoomIn" data-delay-in="0.4">Cakery. Taste more. Celebrate more.</p><a
-                    class="ps-btn animated" href="#" data-animation-in="fadeInRight" data-delay-in="0.5">Order now</a>
+                    class="ps-btn animated" href="#orderform" data-animation-in="fadeInRight" data-delay-in="0.5">Order now</a>
                 </div>
               </div>
               <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 ">
@@ -251,7 +241,7 @@
                   <h5 class="animated" data-animation-in="zoomIn" data-delay-in="0.1">WE CREATE</h5>
                   <h3 class="animated" data-animation-in="zoomIn" data-delay-in="0.3">Cakes, Made with Love</h3>
                   <p class="animated" data-animation-in="zoomIn" data-delay-in="0.4">Celebrate more. Savor every moment.</p><a
-                    class="ps-btn animated" href="#" data-animation-in="fadeInRight" data-delay-in="0.5">Order now</a>
+                    class="ps-btn animated" href="#orderform" data-animation-in="fadeInRight" data-delay-in="0.5">Order now</a>
                 </div>
               </div>
               <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 "><img src="images/cakes/2.png"
@@ -389,7 +379,7 @@
       </div>
     </div>
   </div>
-  <div class="ps-home-about--2">
+  <div class="ps-home-about--2 " style="display:none">
     <div class="ps-container">
       <div class="ps-section__header text-center">
         <h3 class="ps-section__title" id="aboutUs">About Us</h3>
