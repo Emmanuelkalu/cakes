@@ -276,7 +276,7 @@
   <div class="ps-product-collection">
     <div class="ps-container">
       <div class="ps-section__header text-center">
-        <h3 class="ps-section__title">Get In Touch</h3>
+        <h3 class="ps-section__title">Menu Items</h3>
         <p>Delivering to your door</p><span><img src="images/icons/floral.png" alt=""></span>
       </div>
       <div class="ps-section__content">
@@ -290,7 +290,9 @@
             </a></li>
           <li><a href="#tab_4" aria-controls="tab_4" role="tab" data-toggle="tab"><i class="ba-smoothie"></i>Macrons
             </a></li>
-          <!-- <li><a href="#tab_5" aria-controls="tab_5" role="tab" data-toggle="tab"><i class="ba-pizza"></i>Mamie
+          <li><a href="#tab_5" aria-controls="tab_5" role="tab" data-toggle="tab"><i class="ba-bread"></i>Banana Bread
+
+            <!-- <li><a href="#tab_5" aria-controls="tab_5" role="tab" data-toggle="tab"><i class="ba-pizza"></i>Mamie
               Douglas</a></li> -->
         </ul>
         <div class="tab-content">
@@ -377,6 +379,47 @@
                 <h3>Macarons</h3>
                 <h5>Menu:</h5>
                 <p>Macarons <strong> $40.00</strong></p>
+
+                <div class="ps-block--product-status">
+
+                  <div class="ps-block__status"><span> <strong></strong></span><span
+                      class="right"><strong></strong></span>
+                    <div class="clearfix"></div>
+
+                  </div>
+                  <div><span></span></div><a class="ps-btn" href="#contactUs">Order
+                    Now</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" role="tabpanel" id="tab_5">
+            <div class="ps-block--product-set">
+              <div class="ps-block__thumbnail"><img src="images/banner/3.png" alt="">
+              </div>
+              <div class="ps-block__content">
+                <h3>Banana Bread</h3>
+                <h5>Menu:</h5>
+                <p>Classic bread <strong> $12.00</strong></p>       
+                <p>Coconut banana bread<strong> $15.00</strong></p>
+                <p>Buttermilk & Oreo<strong> $15.00</strong></p>
+                <p>Chocolate chip<strong> $17.00</strong></p>
+                <p>Double chocolate<strong> $18.00</strong></p>
+                <p>Almond & raisins<strong> $15.00</strong></p>
+                <p>Raisins<strong> $15.00</strong></p>
+                <p>Walnut<strong> $15.00</strong></p>
+                <p>Mix nuts<strong> $18.00</strong></p>
+                <p>Mix fruit<strong> $20.00</strong></p>
+                <p>Nutella <strong> $18.00</strong></p>
+                <p>Oatmeal<strong> $20.00</strong></p>
+                <p>Mix nuts oatmeal<strong> $25.00</strong></p>
+                <p>Mix fruit Oatmeal<strong> $25.00</strong></p> 
+
+
+ 
+
+
 
                 <div class="ps-block--product-status">
 
