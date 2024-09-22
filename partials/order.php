@@ -111,8 +111,23 @@
                         </div>
                     </div>
 
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label>Our Flavor Combination <sup>*</sup></label>
+                            <select name="flavorCombination" class="form-control" type="text">
+                                <option value=""></option>
+                                <option value="classic velvet">Classic Velvet</option>
+                                <option value="strawberry flavor">Strawberry Flavor</option>
+                            </select>
+                        </div>
+                    </div>
 
-
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label>Number of Tiers <sup>*</sup></label>
+                            <input name="numberOfTiers" class="form-control" type="text" placeholder="">
+                        </div>
+                    </div>
 
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                         <div class="form-group">
@@ -127,6 +142,69 @@
                             <input name="yourBudget" class="form-control" type="text" placeholder="">
                         </div>
                     </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label>Doughnuts <sup>*</sup></label>
+                            <select name="doughnuts" class="form-control" type="text">
+                                <option value=""></option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label>Macarons <sup>*</sup></label>
+                            <select name="macarons" class="form-control" type="text">
+                                <option value=""></option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label>Frosted Cupcakes <sup>*</sup></label>
+                            <select name="frostedCupcakes" class="form-control" type="text">
+                                <option value=""></option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label>Buttercream Cupcakes <sup>*</sup></label>
+                            <select name="buttercreamCupcakes" class="form-control" type="text">
+                                <option value=""></option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label>Fondant Cupcakes <sup>*</sup></label>
+                            <select name="fondantCupcakes" class="form-control" type="text">
+                                <option value=""></option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label>Other Details (Flowers, Toppers) <sup>*</sup></label>
+                            <input name="otherDetails" class="form-control" type="text" placeholder="">
+                        </div>
+                    </div>
+
 
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                         <div class="form-group">
