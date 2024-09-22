@@ -32,12 +32,29 @@
                         </div>
                     </div>
 
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label>Phone Number <sup>*</sup></label>
+                            <input name="phoneNumber" class="form-control" type="text" placeholder="">
+                        </div>
+                    </div>
+
+
 
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                         <div class="form-group">
                             <label>Event Date <sup>*</sup></label>
                             <div class="ps-form--icon"><i class="fa fa-calendar-check-o"></i>
                                 <input name="date" class="form-control" type="text" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label>Time <sup>*</sup></label>
+                            <div class="ps-form--icon"><i class="fa fa-clock-o"></i>
+                                <input name="time" class="form-control" type="text" placeholder="">
                             </div>
                         </div>
                     </div>
@@ -51,13 +68,7 @@
                     </div>
 
 
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                        <div class="form-group">
-                            <label>Phone Number <sup>*</sup></label>
-                            <input name="phoneNumber" class="form-control" type="text" placeholder="">
-                        </div>
-                    </div>
-
+              
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                         <div class="form-group">
                             <label>Type of Event <sup>*</sup></label>
@@ -75,6 +86,28 @@
                         <div class="form-group">
                             <label>Cake Colors <sup>*</sup></label>
                             <input name="cakeColors" class="form-control" type="text" placeholder="">
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label>Buttercream Flavors<sup>*</sup></label>
+                            <input name="butterCreamFlavors" class="form-control" type="text" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label>Cake Flavors<sup>*</sup></label>
+                            <input name="cakeFlavors" class="form-control" type="text" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="form-group">
+                            <label>Filling Flavors<sup>*</sup></label>
+                            <input name="fillingFlavors" class="form-control" type="text" placeholder="">
                         </div>
                     </div>
 

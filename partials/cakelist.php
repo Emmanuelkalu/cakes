@@ -26,10 +26,7 @@
                                                 src="./images/products/1.png"
                                                 class="attachment-noubready_260x200 size-noubready_260x200" alt=""
                                                 srcset="./images/products/1.png 1040w, ./images/products/1.png 600w"
-                                                sizes="(max-width: 260px) 100vw, 260px"> <span class="ps-badge"><img
-                                                    decoding="async"
-                                                    src="https://warethemes.com/wordpress/bready/wp-content/themes/bready/assets/images/icons/badge-red.png"
-                                                    alt="Bready"><i>New</i></span>
+                                                sizes="(max-width: 260px) 100vw, 260px"> <span class="ps-badge"><i>New</i></span>
                                             <ul class="ps-product__actions">
                                                 <li><a href="#quickview-modal" data-product_id="35"
                                                         data-tooltip="Quick View" class="product-quickview popup-modal"
@@ -51,12 +48,12 @@
                                         </div>
                                         <div class="ps-product__content">
                                             <a class="ps-product__title"
-                                                href="https://warethemes.com/wordpress/bready/product/pie-topping-jelly/">1 Tiered Cake</a>
+                                                href="">1 Tiered Cake</a>
                                             <p>
-                                                <a href="https://warethemes.com/wordpress/bready/product-category/cupcake/"
-                                                    rel="tag">Cupcake</a> - <a
-                                                    href="https://warethemes.com/wordpress/bready/product-category/organic/"
-                                                    rel="tag">Organic</a>
+                                                <a href=""
+                                                    rel="tag">Cake</a> - <a
+                                                    href=""
+                                                    rel="tag">1 Tier</a>
                                             </p>
 
                                             <div class="br-wrapper br-theme-fontawesome-stars"><select name="rating"
@@ -360,7 +357,7 @@
                                             <img loading="lazy" decoding="async" width="260" height="200"
                                                 src="./images/products/2.png"
                                                 class="attachment-noubready_260x200 size-noubready_260x200" alt=""
-                                                srcset="./images/products/souff2le.png 1040w, ./images/products/2.png 600w"
+                                                srcset="./images/products/2.png 1040w, ./images/products/2.png 600w"
                                                 sizes="(max-width: 260px) 100vw, 260px">
                                             <ul class="ps-product__actions">
                                                 <li><a href="#quickview-modal" data-product_id="21"
@@ -375,7 +372,7 @@
 
                                                 <li>
                                                     <a rel="nofollow"
-                                                        href="https://warethemes.com/wordpress/bready/product/cotton-candy-souffle/"
+                                                        href=""
                                                         data-quantity="1" data-product_id="21" data-product_sku="CK_007"
                                                         class="button product_type_variable add_to_cart_button"
                                                         data-tooltip="Select options"><i class="ba-shopping"></i></a>
@@ -384,11 +381,11 @@
                                         </div>
                                         <div class="ps-product__content">
                                             <a class="ps-product__title"
-                                                href="https://warethemes.com/wordpress/bready/product/cotton-candy-souffle/">Banana Bread</a>
+                                                href="">Banana Bread</a>
                                             <p>
-                                                <a href="https://warethemes.com/wordpress/bready/product-category/cupcake/"
+                                                <a href=""
                                                     rel="tag">Bread</a> - <a
-                                                    href="https://warethemes.com/wordpress/bready/product-category/organic/"
+                                                    href=""
                                                     rel="tag"></a>
                                             </p>
 
