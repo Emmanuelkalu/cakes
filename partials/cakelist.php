@@ -355,9 +355,9 @@
                                     <div class="ps-product ps-product--horizontal">
                                         <div class="ps-product__thumbnail">
                                             <img loading="lazy" decoding="async" width="260" height="200"
-                                                src="./images/products/2.png"
+                                                src="./images/products/3.png"
                                                 class="attachment-noubready_260x200 size-noubready_260x200" alt=""
-                                                srcset="./images/products/2.png 1040w, ./images/products/2.png 600w"
+                                                srcset="./images/products/3.png 1040w, ./images/products/3.png 600w"
                                                 sizes="(max-width: 260px) 100vw, 260px">
                                             <ul class="ps-product__actions">
                                                 <li><a href="#quickview-modal" data-product_id="21"
