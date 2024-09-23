@@ -222,6 +222,12 @@
               <li><a href="#">Order Form</a></li>
             </ul>
           </li>
+          <li><a href="partials/checkout.php">Checkout</a>
+                <ul class="sub-menu">
+                  <li></li>
+                  <li><a href="cart.html">Cart</a></li>
+                </ul>
+              </li>
 
 
           <li><a href="#contactUs">Contact Us</a></li>
