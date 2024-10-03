@@ -11,7 +11,7 @@ if (isset($_SESSION['authenticated']) && $_SESSION['authenticated'] === true) {
     // User is authenticated, proceed to fetch orders
 
     // Fetch orders from the database
-    $sql = "SELECT * FROM orders";
+    $sql = "SELECT * FROM orders ORDER BY created_at DESC";
     $result = $conn->query($sql);
 } else {
     // User is not authenticated, check for login form submission
@@ -82,38 +82,35 @@ if (isset($_SESSION['authenticated']) && $_SESSION['authenticated'] === true) {
                     </thead>
                     <tbody class="text-gray-600 text-sm font-light">
                         <?php if ($result->num_rows > 0): ?>
-                                    <?php while ($row = $result->fetch_assoc()): ?>
-                                        <tr class="border-b border-gray-200 hover:bg-gray-100 transition duration-300">
-                                            <td class="py-3 px-6"><?php echo htmlspecialchars($row['name']); ?></td>
-                                            <td class="py-3 px-6"><?php echo htmlspecialchars($row['email']); ?></td>
-                                            <td class="py-3 px-6"><?php echo htmlspecialchars($row['date']); ?></td>
-                                            <td class="py-3 px-6"><?php echo htmlspecialchars($row['deliveryAddress']); ?></td>
-                                            <td class="py-3 px-6"><?php echo htmlspecialchars($row['phoneNumber']); ?></td>
-                                            <td class="py-3 px-6"><?php echo htmlspecialchars($row['typeOfEvent']); ?></td>
-                                            <td class="py-3 px-6"><?php echo htmlspecialchars($row['numberOfServings']); ?></td>
+                            <?php while ($row = $result->fetch_assoc()): ?>
+                                <tr class="border-b border-gray-200 hover:bg-gray-100 transition duration-300">
+                                    <td class="py-3 px-6"><?php echo htmlspecialchars($row['name']); ?></td>
+                                    <td class="py-3 px-6"><?php echo htmlspecialchars($row['email_address']); ?></td>
+                                    <td class="py-3 px-6"><?php echo htmlspecialchars($row['event_date']); ?></td>
+                                    <td class="py-3 px-6"><?php echo htmlspecialchars($row['delivery_address']); ?></td>
+                                    <td class="py-3 px-6"><?php echo htmlspecialchars($row['phone_number']); ?></td>
+                                    <td class="py-3 px-6"><?php echo htmlspecialchars($row['type_of_event']); ?></td>
+                                    <td class="py-3 px-6"><?php echo htmlspecialchars($row['number_of_servings']); ?></td>
                                     <td class="py-3 px-6">
-                                        <a href="view_order.php?id=<?php echo $row['id']; ?>" class="text-blue-500 hover:underline">View</a>
+                                        <a href="view_order?id=<?php echo $row['id']; ?>"
+                                            class="text-white bg-blue-500 p-2 px-6 my-2 rounded-lg hover:underline">View</a>
                                         <!-- Add more actions as needed -->
                                     </td>
-                                    </tr>
-                                    <?php endwhile; ?>
-                                    <?php else: ?>
-                                    <tr>
+                                </tr>
+                            <?php endwhile; ?>
+                                <?php else: ?>
+                                <tr>
                                 <td colspan="8" class="py-3 px-6 text-center">No orders found.</td>
                             </tr>
                         <?php endif; ?>
-                                </tbody>
-                                </table>
-                                </div>
+                    </tbody>
+                    </table>
+                    </div>
         <?php endif; ?>
     </div>
 </body>
 
 </html>
-
-<style>
-
-</style>
 
 <?php
 $conn->close();
