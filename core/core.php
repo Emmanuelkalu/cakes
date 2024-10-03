@@ -10,6 +10,13 @@ if ($conn->connect_error) {
 $stripeSecretKey = "sk_test_51IkbSnH2j0YsDFbqDTF26kmj01zmNODrsJcHNJvv9IfttQknv7FjJtrkQBSbyXd17OgPWfn7dQ39OfrX2APlRgBA00PWDKN0Ju";
 $stripe_publishable_key = "pk_test_51IkbSnH2j0YsDFbqFg6aHScfvgfXh9X1sCEyLDUpGBANCcEgQtmvyDiP4khGxYgKlIULxpF76mDwz08oZwJdLla400ESavFqH9";
 
+// Check if the cart session is not set, and if so, initialize it as an empty array
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = array();
+}
+
+
+
 function getTotalCartItems()
 {
     // Start the session if it hasn't been started yet
