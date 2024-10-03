@@ -1,12 +1,13 @@
 
 <?php
+include_once __DIR__ . "/core/core.php";
 // Simple PHP File-Based Router
 
 // Get the request URI and remove any query string
 $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2)[0];
 
 //
-$basep = "cake";
+$basep = "";
 // Remove leading and trailing slashes
 $request_uri = trim($request_uri, '/');
 $request_uri = str_replace($basep, '', $request_uri);
