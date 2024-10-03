@@ -1,4 +1,5 @@
 <?php session_start();
+ini_set("display_errors", 1);
 // Database connection
 // $conn = new mysqli("localhost", "root", "", "buccie_cake");
 $conn = new mysqli("localhost", "buccie_cake", "Bitmonster11#", "buccie_cake");
