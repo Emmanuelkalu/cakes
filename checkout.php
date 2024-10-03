@@ -291,6 +291,10 @@ $user = $_SESSION['user'];
           });
         })
         .then(function (result) {
+          console.error('Error:', result);
+          console.error('Error:', result.error);
+          console.error('Error:', result.error.message);
+
           if (result.error) {
             throw new Error(result.error.message);
           }
