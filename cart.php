@@ -9,7 +9,7 @@
   <body>
     <div class="ps-search">
       <div class="ps-search__content"><a class="ps-search__close" href="#"><span></span></a>
-        <form class="ps-form--search-2" action="https://nouthemes.net/html/bready/do_action" method="post">
+        <form class="ps-form--search-2" action="" method="post">
           <h3>Enter your keyword</h3>
           <div class="form-group">
             <input class="form-control" type="text" placeholder="">

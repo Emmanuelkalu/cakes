@@ -16,7 +16,7 @@
                         <div class="ps-section__content">
                             <div class="row products">
                                 <?php
-                                $q = $conn->query("SELECT * FROM cakes ORDER BY id desc");
+                                $q = $conn->query("SELECT * FROM cakes ORDER BY id asc limit 6");
                                 while ($cake = $q->fetch_assoc()) { ?>
                                  <div data-mh="product" data-id="35"
                                     data-url=""
@@ -96,6 +96,9 @@
 
                             </div>
                         </div>
+                    <div class="flex center">
+                        <a href="cakelist" class="ps-btn" style="margin: 40px 0;"> View more. . .</a>
+                    </div>
                     </div>
                 </div>
             </div>

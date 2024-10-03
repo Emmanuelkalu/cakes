@@ -8,7 +8,7 @@
           <li>Sunday <span> closed</span></li>
         </ul>
       </div>
-      <form  class="ps-form--get-in-touch" action="https://nouthemes.net/html/bready/do_action" method="post">
+      <form  class="ps-form--get-in-touch" action="" method="post">
         <h3>Get in touch</h3>        
         <div class="form-group">
           <label>Name <sup>*</sup></label>
@@ -28,7 +28,7 @@
           <button class="ps-btn">Contact us</button>
         </div>
       </form>
-      <form class="ps-form--subscribe-offer" action="https://nouthemes.net/html/bready/do_action" method="post">
+      <form class="ps-form--subscribe-offer" action="" method="post">
         <h4>Get news & offer</h4>
         <div class="form-group">
           <input class="form-control" type="text" placeholder="Your Email...">
@@ -62,7 +62,7 @@
   </div>
   <div class="ps-popup" id="subscribe" data-time="10000">
     <div class="ps-popup__content"><a class="ps-popup__close" href="#"><i class="fa fa-remove"></i></a>
-      <form class="ps-form--subscribe-popup bg--cover" action="https://nouthemes.net/html/bready/do_action"
+      <form class="ps-form--subscribe-popup bg--cover" action=""
         method="post" data-background="images/bg/subscribe.jpg">
         <h3>subscribe email</h3>
         <p>Follow us & get<strong> 20% OFF</strong></p>

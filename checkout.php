@@ -48,7 +48,7 @@ $user = $_SESSION['user'];
       </style>
 
 
-      <form class="ps-form--checkout" action="https://nouthemes.net/html/bready/do_action" method="post">
+      <form class="ps-form--checkout" action="" method="post">
         <div class="row">
           <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
             <div class="ps-checkout__billing">

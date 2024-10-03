@@ -30,8 +30,10 @@
     <nav class="navigation">
       <div class="ps-container"><a class="ps-logo" href="#"><img src="images/logo-light.png" alt=""></a>
         <div class="menu-toggle"><span></span></div>
-        <div class="header__actions"><a class="ps-search-btn" href="#"><i class="ba-magnifying-glass"></i></a><a
-            href="#"><i class="ba-profile"></i></a>
+        <div class="header__actions">
+          <!-- <a class="ps-search-btn" href="#"><i class="ba-magnifying-glass"></i></a> -->
+          <a
+            href="my-orders"><i class="ba-profile"></i></a>
           <div class="ps-cart"><a class="ps-cart__toggle" href="cart"><span><i id="cart-count"><?php echo getTotalCartItems(); ?></i></span><i class="ba-shopping"></i></a>
          
           </div>
@@ -39,21 +41,16 @@
         <ul class="menu">
           <li class="current-menu-item menu-item-has-children"><a href="./">Home</a><span class="sub-toggle">
           </li>
-          <li><a href="#aboutUs">About</a></li>
-          <li class="menu-item-has-children"><a href="#">product</a><span class="sub-toggle"><i
-                class="fa fa-angle-down"></i></span>
-            <ul class="sub-menu">
-              <li><a href="#">Product List</a></li>
-              <li><a href="#">Product Detail</a></li>
-              <li><a href="#">Order Form</a></li>
-            </ul>
+          <li><a href="./home#aboutUs">About</a></li>
+          <li class="menu-item-has-children"><a href="cakelist">product</a>
+           
           </li>
           <li><a href="checkout">Checkout</a>
                
               </li>
 
 
-          <li><a href="#contactUs">Contact Us</a></li>
+          <li><a href="./home#contactUs">Contact Us</a></li>
         </ul>
       </div>
     </nav>
