@@ -4,7 +4,7 @@ require_once(__DIR__ . '/core/vendor/autoload.php');
 if (!isset($_GET['status']) && !isset($_GET['session_id'])) {
     $_SESSION['message'] = 'Missing payment parameters';
     $_SESSION['status'] = 'false';
-    return header("location:ny-orders?handlepay=false");
+    return header("location:my-orders?handlepay=false");
 }
 
 

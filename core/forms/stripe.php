@@ -41,8 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 ]
             ],
             'mode' => 'payment',
-            'success_url' => $base . 'https://nglocakes.com/handlepay?status=true&session_id={CHECKOUT_SESSION_ID}',
-            'cancel_url' => $base . 'https://nglocakes.com/handlepay?status=false',
+            'success_url' => $base . 'nglocakes.com/handlepay?status=true&session_id={CHECKOUT_SESSION_ID}',
+            'cancel_url' => $base . 'nglocakes.com/handlepay?status=false',
             'customer_email' => $_SESSION['user']['email']
         ]);
 
