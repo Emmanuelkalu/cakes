@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $currency = 'usd';
 
         if (!$amount || !$currency) {
-            throw new Exception('Amount and currency are required');
+            throw new Exception('Amount and currency are required amount=' . $amount . ' curr=' . $currency);
         }
 
         $checkout_session = \Stripe\Checkout\Session::create([
@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } catch (Exception $e) {
         // logError('Stripe error: ' . $e->getMessage());
         http_response_code(500);
-        echo $e->getMessage();
+        echo 'stripe errpr ' . $e->getMessage();
     }
 } else {
     http_response_code(405);
