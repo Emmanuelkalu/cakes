@@ -147,8 +147,8 @@ $user = $_SESSION['user'];
               </footer>
             </div>
             <!-- <div class="ps-shipping">
-                <h3>FREE SHIPPING</h3>
-                <p>YOUR ORDER QUALIFIES FOR FREE SHIPPING.<br> <a href="#"> Singup </a> for free shipping on every order, every time.</p>
+                <h3>Fast Shipping</h3>
+                <p>YOUR ORDER QUALIFIES FOR Fast Shipping.<br> <a href="#"> Singup </a> for Fast Shipping on every order, every time.</p>
               </div> -->
           </div>
         </div>
@@ -160,14 +160,14 @@ $user = $_SESSION['user'];
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
           <div class="ps-block--iconbox"><i class="ba-delivery-truck-2"></i>
-            <h4>Free Shipping <span> On Order Over$199</h4>
+            <h4>Fast Shipping <span> On all Orders</h4>
             <p>Want to track a package? Find tracking information and order details from Your Orders.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
           <div class="ps-block--iconbox"><i class="ba-biscuit-1"></i>
             <h4>Master Chef<span> WITH PASSION</h4>
-            <p>Shop zillions of finds, with new arrivals added daily.</p>
+            <p>Varieties of Cakes and bread, with new arrivals added daily.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">

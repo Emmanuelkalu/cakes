@@ -75,7 +75,7 @@ if (isset($_GET['ref'])) {
                 </div>
                 <button class="ps-btn ps-btn--fullwidth" type="submit">Log In</button>
               </form>
-              <p style="margin:20px 0">Don't have an account? <a href="auth<?php echo $ref; ?>">Sign Up</a></p>
+              <p style="margin:20px 0">Don't have an account? <a href="signup<?php echo $ref; ?>">Sign Up</a></p>
             </div>
         </div>
         </div>
